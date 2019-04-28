@@ -15,6 +15,27 @@
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <link href="../css/style.css" rel="stylesheet">
+    <style>
+        .intro-title {
+            top:100px;
+            position: relative;
+            font-size: 48px;
+            font-family:'Signika', sans-serif;
+            color: white;
+        }
+
+        .mission-statement {
+            position: relative;
+            margin-top: 95px;
+            padding-bottom: 0;
+        }
+
+        #missionStatement div p, #myStory div p{
+            text-align: center;
+            color: var(--mainGray);
+            font-size: 18px;
+        }
+    </style>
     <!-- These are the javascript links to jquery, popper, TweenMax, Bootstrap, and Scroll Magic in that order. -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" async></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" async></script>
@@ -25,6 +46,138 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.velocity.min.js" async></script>
 </head>
 <body>
+    <!--This is the Navbar -->
+	<!-- navbar defines this as a Bootstrap navbar, navbar-expand-lg
+		makes it collapse into a hamburger icon on smaller screens -->
+	<nav class="navbar fixed-top navbar-expand-lg bg-transparent navbar-light">
+        <a class="navbar-brand" href="#">Happy Tales</a>
+        <!--This is the code for the toggler. data-target and aria-controls
+            must be equal to the navigation list's div id. -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="color:white;">
+            <i class="fas fa-bars"></i>
+        </button>
+
+        <!-- This is the start of the navigation list. The div id must
+            be equal to the button's data-target and aria-controls. -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <!-- ml-auto aligns the content to the right -->
+            <ul class="navbar-nav ml-auto">
+                <!-- nav-item is required for each li in this list
+                    and nav-link is required for each anchor link.
+                    active styles this item as an active item. -->
+                <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Services & Rates</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Let's Meet</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Our Friends</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">F.A.Q.</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
+            </ul>
+    </nav>
+
+    <div id="introParallax" class="container-fluid">
+        <div class="row">
+            <div class="intro-parallax-img">
+                <h2 class="card-title intro-title">About <section class="accent">Us</section></h2>
+            </div>
+        </div>
+    </div>
+
+    <div id="missionStatement" class="container-fluid">
+        <div class="row d-flex justify-content-center">
+            <h2 class="card-title mission-statement">Mission Statement</h2> 
+        </div>
+        <div class="row d-flex justify-content-center p-3">
+            <p>
+                Lorem ipsum dolor sit amet,
+                consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                exercitation Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation
+            </p>
+        </div>
+    </div>
+
+    <div id="myStory" class="container-fluid" style="background-color: white; width:90%; margin-top: 90px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+        <div class="row d-flex">
+            <img src="../img/jumbo-2.jpg"/>
+        </div>
+        <div class="row d-flex justify-content-center">
+            <h2 class="card-title" style="padding-bottom:0;">My Story</h2>
+        </div>
+        <div class="row d-flex justify-content-center p-3">
+            <p style="font-size: 16px;">
+                Lorem ipsum dolor sit amet,
+                consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                exercitation Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation
+            </p>
+        </div>
+    </div>
+
+    <div id="location" class="container-fluid" style="margin-top:90px;">
+        <div class="row d-flex justify-content-center">
+            <h2 class="card-title" style="padding-bottom:10px;">Service Area</h2>
+        </div>
+        <div class="row d-flex">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d729511.5797693656!2d-84.80110645733522!3d44.419732795145535!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8820f753dd309057%3A0xcab1dd7828e7fc6f!2sHappy+Tales+Pet+Care!5e0!3m2!1sen!2sus!4v1556474954205!5m2!1sen!2sus" width="360" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="page-footer font-small blue pt-4">
+        <!-- Footer Links -->
+        <div class="container-fluid text-center text-md-left">
+            <!-- Grid row -->
+            <div class="row">
+                <!-- Grid column -->
+                <div class="col-md-4 mt-md-0 mt-3">
+                    <!-- Content -->
+                    <h5 class="text-uppercase font-weight-bold">Contact</h5>
+                    <i class="fas fa-phone"></i> <p class="footer-text footer-contact-text">(989)217-6097</p><br/>
+                    <i class="fas fa-envelope"></i> <p class="footer-text footer-contact-text">happytalespetcare@gmail.com</p>
+                    <br/><br/>
+                    <p class="footer-text" style="margin-bottom:1rem;">Servicing West Branch, Saint Helen & Rose City</p>
+                    <p class="footer-text">Out of service area? Contact us today to figure</p>
+                    <p class="footer-text">something out!</p>
+                </div>
+                <!-- Grid column -->
+                <div class="col-md-4 mt-md-0 mt-3">
+                    <h5 class="text-uppercase font-weight-bold">Office Hours</h5>
+                    <p class="footer-text">Monday:    8:00 AM - 8:00 PM</p>
+                    <p class="footer-text">Tusday:    8:00 AM - 8:00 PM</p>
+                    <p class="footer-text">Wednesday: 8:00 AM - 8:00 PM</p>
+                    <p class="footer-text">Thursday:  8:00 AM - 8:00 PM</p>
+                    <p class="footer-text">Friday:    8:00 AM - 8:00 PM</p>
+                    <p class="footer-text">Saturday:  9:00 AM - 4:00 PM</p>
+                    <p class="footer-text">Sunday:   12:00 PM - 4:00 PM</p>
+                </div>
+                <div class="col-md-4 mt-md-0 mt-3">
+                    <h5 class="text-uppercase font-weight-bold">Let's Connect!</h5>
+                    <p class="footer-text"> Follow us on Facebook and Instagram</p>
+                    <p class="footer-text"> for all of the latest Happy Tales news!</p>
+                    <div>
+                        <i class="fab fa-facebook-f fa-2x social-icon-fb"></i>
+                        <i class="fab fa-instagram fa-2x social-icon-insta"></i>
+                    </div>
+                </div>
+            </div>
+            <!-- Grid row -->
+        </div>
+        <!-- Footer Links -->
+        <!-- hr break -->
+        <hr class="footer-break"/>
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2019 Copyright:
+            <a href="https://deadhead.media" style="color: var(--mainBlue);"> DeadHead.Media</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+
     <script src="../js/aboutus.js"></script>
 </body>
 </html>

@@ -235,6 +235,24 @@ body {
 
 }
 
+.accent {
+	font-weight: bolder;
+	color: var(--mainPurple);
+	font-family: 'Courgette', sans-serif;
+}
+
+.intro-parallax-img {
+	background-image:url('parallax-img.jpg');
+
+	height: 325px;
+	width: 100%;
+
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
 #parallax-text {
 	padding-top:400%;
 }
@@ -1026,6 +1044,7 @@ footer i {
 	.icon-title {
 		font-size:24px;
 	}
+	
 
 	.why-choose-title {
 		padding-bottom: 30px;
