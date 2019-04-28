@@ -11,10 +11,18 @@
     <title>Happy Tales Pet Care</title>
 	<!-- These are the links to custome fonts (Lato and Signika,
 		 Bootstrap CSS, Font Awesome Icons, and custom css in that order. -->
-    <link href="https://fonts.googleapis.com/css?family=Lato|Signika" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Signika|Dancing+Script|Courgette" rel="stylesheet">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet">
 	  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <link href="css/style.css" rel="stylesheet">
+    <!-- These are the javascript links to jquery, popper, Bootstrap, TweenMax, and custom javascript in that order. -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" async></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" async></script>
+    <script src="js/TweenMax.min.js" async></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" async></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js" async></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js" async></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.velocity.min.js" async></script>
 </head>
 
   <body>
@@ -105,7 +113,7 @@
         <!-- This is the header text for the jumbotron -->
         <h1 class="ml9">
           <span class="text-wrapper">
-            <span class="letters jumbotron-text">West Branch's Premier Pet Care Provider</span>
+            <span class="letters jumbotron-text">West Branch's <span style="font-family:'Dancing Script', cursive; color: var(--mainPurple);">Premier</span> Pet Care Provider</span>
           </span>
         </h1>
         <!-- This is the paw and lines image. the src variable is where the picture is located in your folders. -->
@@ -212,7 +220,7 @@
 
     <section id="why-choose" class="container">
       <div class="why-choose-row">
-        <h2 class="card-title why-choose-title"> Why Choose Happy Tales? </h2>
+        <h2 class="card-title why-choose-title"> Why Choose <span style="font-family: 'Dancing Script', cursive;">Happy Tales</span>? </h2>
       </div>
       <div class="why-choose-row d-flex flex-row justify-content-around row">
         <div class="why-choose-col why-choose-left col-md-4">
@@ -276,7 +284,7 @@
 <section class="text-center" id="testimonials">
   <!-- Section heading -->
   <h2 id="carousel-title" class="h1-responsive font-weight-bold my-5 card-title">
-    What Our Friends Have To Say
+    What Our <span style="font-family:'Dancing Script', cursive;">Friends</span> Have To Say
   </h2>
   <!-- Section description -->
   <div id="testimonial-carousel" class="carousel slide carousel-multi-item carousel-fade" data-ride="carousel" data-interval="12000">
@@ -448,7 +456,7 @@
 <section class="text-center" id="testimonials-mobile">
   <!-- Section heading -->
   <h2 id="carousel-title-mobile" class="h1-responsive font-weight-bold my-5 card-title" style="margin-bottom:0; padding-bottom:0;">
-    What Our Friends Have To Say
+    What Our <span style="font-family: 'Dancing Script', cursive;">Friends</span> Have To Say
   </h2>
   <!-- Section description -->
   <div id="testimonial-carousel-mobile" class="carousel slide carousel-fade" data-ride="carousel" data-interval="6000" style="height: 700px;">
@@ -592,7 +600,7 @@
 
 <section id="gallery">
   <div class="scrolled-image gallery-bg">
-      <h2 class="card-title gallery-title">Our Friends</h2>
+      <h2 class="card-title gallery-title">Our <span style="font-family:'Dancing Script', cursive;">Friends</span></h2>
       <div id="gallery-left">
         <img src="img\800x402.jpg" class="center-img gallery-img gallery-top-left"/>
         <img src="img\800x550.jpg" class="center-img gallery-img gallery-bot-left"/>
@@ -606,7 +614,7 @@
 </section>
 
 <section id="contact">
-  <h2 class="card-title contact-title">Is your friend ready to join the Happy Tales Pack?</h2>
+  <h2 class="card-title contact-title font-weight-light">Is your friend <span style="font-family: 'Courgette', cursive; color: var(--mainBlue);" class="font-weight-bold">ready to join</span> the Happy Tales Pack?</h2>
   <p class="card-main-text contact-text">
     Our happy clients come in many shapes, sizes and colors. Let Happy Tales make you and your
     fur babies happy; we're certain you want regret it! Click here to contact us today!
@@ -672,17 +680,7 @@
     <!-- Copyright -->
   </footer>
   <!-- Footer -->
-
-
-		<!-- These are the javascript links to jquery, popper, Bootstrap, TweenMax, and custom javascript in that order. -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-    <script src="js/TweenMax.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js"></script>
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.velocity.min.js"></script>
-    <script src="js/main.js"></script>
+  <script src="js/main.js"></script>
   </body>
 </html>
 

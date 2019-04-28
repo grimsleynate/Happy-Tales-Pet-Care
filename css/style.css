@@ -3,10 +3,6 @@
 }
 */
 
-html {
-	visibility: hidden;
-}
-
 /* This sets variables to be used throughout the css. */
 :root {
 	--darkGray:#404040;
@@ -14,6 +10,7 @@ html {
 	--lightGray:#A0A0A0;
 	--mainPurple:#800080;
 	--mainBlue:#19227C;
+	--mainBlue2: #303789;
 	--smallFont: 1.5vw;
 	--mediumFont: 2.5vw;
 	--largeFont: 84px;
@@ -97,6 +94,7 @@ all other content. */
 #jumbotron-image-container {
 	position: absolute;
 	width: 100%;
+	top:0;
 }
 
 #jumbotron-image {
@@ -207,7 +205,7 @@ hr {
 
 .card-title {
 	font-family: 'Signika', sans-serif;
-	font-weight: 700;
+	font-weight: 400;
 	font-size: 48px;
 	padding-top: 5%;
 	padding-bottom: 8%;
@@ -476,7 +474,7 @@ i {
 }
 
 .contact-title {
-	color:var(--mainBlue);
+	color:var(--mainBlue2);
 	margin-top:80px;
 	padding-bottom:0;
 }
@@ -575,7 +573,7 @@ footer i {
 }
 
 #gallery-left {
-	transform: translate(0, -65px);
+	transform: translate(0, -85px);
 	margin-left: 1%;
 }
 
@@ -1017,7 +1015,7 @@ footer i {
 	}
 
 	.parallax-title{
-		color: var(--mainBlue);
+		color: white;
 	}
 
 	.why-choose-col {
@@ -1162,5 +1160,48 @@ footer i {
 
 	.carousel-inner {
 		top: -80px;
+	}
+
+	#more-photos {
+		font-size: 30px;
+	}
+
+	.card .card-body a{
+		font-size: 20px;
+	}
+
+	#services-title{
+		padding-bottom: 80px;
+		position: relative;
+		top: 30px;
+		font-size: 36px;
+	}
+
+	#contact {
+		padding-top: 240px;
+	}
+
+	.contact-text {
+		font-size: 18px;
+		width: 90%;
+	}
+
+	#carouselSlides {
+		height: 475px;
+	}
+}
+
+@media only screen and (max-width: 360px) {
+	#jumbotron-text-container {
+		top: 0;
+	}
+
+	.bttn-float.bttn-lg {
+		bottom: 0;
+	}
+
+	#about-us {
+		margin-top: 0;
+		top: -200px;
 	}
 }
