@@ -11,23 +11,18 @@ Web Page Project:
     ☐ copy write parallax (best friend's new best friend, complimentary meet and greet) @low @45minutes
     ☐ copy write why choose cards @low @30minutes
     ☐ Link Hyperlinks (nav bar, buttons[5], gallery, testimonial[more]) @low @30m
-    ✔ Speed up transition on gallery @high @15m @started(19-04-22 10:10) @done(19-04-22 10:14) @lasted(4m1s)
-    ✔ Make "More Photos" on gallery one line @high @10m @started(19-04-22 10:16) @done(19-04-22 10:16) @lasted(38s)
-    ✔ increase font size on "more" button (testimonials) @high @10m @started(19-04-22 10:16) @done(19-04-22 10:19) @lasted(3m34s)
-    Services:
-       ✔ Move Services title up @high @10m @started(19-04-22 10:19) @done(19-04-22 10:23) @lasted(4m57s)
-       ✔ Increase Services title font size @high @10m @started(19-04-22 10:25) @done(19-04-22 10:25) @lasted(39s)
-    ✔ Change Parallax Title to white @high @5m @started(19-04-22 10:25) @done(19-04-22 10:26) @lasted(1m42s)
-    ✔ Increase gap between gallery and contact section @high @15m @started(19-04-22 10:26) @done(19-04-22 10:28) @lasted(2m1s)
-    ✔ Increase font size on Contact main text @high @5m @started(19-04-22 10:29) @done(19-04-22 10:30) @lasted(1m24s)
-    ✔ fix gap on gallery @high @20m @started(19-04-22 10:30) @done(19-04-22 10:31) @lasted(1m14s)
-
-  About Us Page:
-    ✔ Create new javascript file with the navbar movement included @high @5m @started(19-04-28 12:17) @done(19-04-28 12:17) @lasted(49s)
-  
-
 
 Archive:
+  ✔ Speed up transition on gallery @high @15m @started(19-04-22 10:10) @done(19-04-22 10:14) @lasted(4m1s) @project(Web Page Project.Home Page)
+  ✔ Make "More Photos" on gallery one line @high @10m @started(19-04-22 10:16) @done(19-04-22 10:16) @lasted(38s) @project(Web Page Project.Home Page)
+  ✔ increase font size on "more" button (testimonials) @high @10m @started(19-04-22 10:16) @done(19-04-22 10:19) @lasted(3m34s) @project(Web Page Project.Home Page)
+  ✔ Move Services title up @high @10m @started(19-04-22 10:19) @done(19-04-22 10:23) @lasted(4m57s) @project(Web Page Project.Home Page.Services)
+  ✔ Increase Services title font size @high @10m @started(19-04-22 10:25) @done(19-04-22 10:25) @lasted(39s) @project(Web Page Project.Home Page.Services)
+  ✔ Change Parallax Title to white @high @5m @started(19-04-22 10:25) @done(19-04-22 10:26) @lasted(1m42s) @project(Web Page Project.Home Page)
+  ✔ Increase gap between gallery and contact section @high @15m @started(19-04-22 10:26) @done(19-04-22 10:28) @lasted(2m1s) @project(Web Page Project.Home Page)
+  ✔ Increase font size on Contact main text @high @5m @started(19-04-22 10:29) @done(19-04-22 10:30) @lasted(1m24s) @project(Web Page Project.Home Page)
+  ✔ fix gap on gallery @high @20m @started(19-04-22 10:30) @done(19-04-22 10:31) @lasted(1m14s) @project(Web Page Project.Home Page)
+  ✔ Create new javascript file with the navbar movement included @high @5m @started(19-04-28 12:17) @done(19-04-28 12:17) @lasted(49s) @project(Web Page Project.About Us Page)
   ✔ copy write footer content @30m @done(19-04-15 21:34)  @project(Web Page Project.Home Page)
   ✔ fade in text and cards for movement @3hours @done(19-04-15 21:34) @project(Web Page Project.Home Page)
   ✔ smooth out animation for testimonials @15minutes @started(19-04-16 08:09) @done(19-04-16 08:48) @lasted(39m6s) @project(Web Page Project.Home Page)

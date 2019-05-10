@@ -237,8 +237,8 @@ body {
 
 .accent {
 	font-weight: bolder;
-	color: var(--mainPurple);
-	font-family: 'Courgette', sans-serif;
+	font-family: 'Courgette', cursive;
+	 color: var(--mainBlue);
 }
 
 .intro-parallax-img {
