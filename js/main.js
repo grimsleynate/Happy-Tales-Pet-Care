@@ -55,12 +55,23 @@
 				var tlp = (tl.progress()*100)>>0;
 				TweenMax.set('.gallery-img' ,{
 					'-webkit-filter':'grayscale(' + (100 - tlp) + '%' + ')',
-					'filter':'grayscale(' + tlp + '%' + ')'
+					'filter':'grayscale(' + (100 - tlp) + '%' + ')'
 				});	
 			},
 			scale: 0.9
 		}, 0.3);
-		galleryTimeline.add(galleryTween);
+		var bgGalleryTween = new TweenMax.staggerFrom(".gallery-bg", 1.5, {
+			onUpdateParams:["{self}"],
+			onUpdate:function(tl){
+				var tlp = (tl.progress()*100)>>0;
+				TweenMax.set('.gallery-bg' ,{
+					'-webkit-filter':'grayscale(' + tlp + '%' + ')',
+					'filter':'grascale(' + tlp + '%' + ')'	
+				});
+			},
+		 }, 0.3);
+		galleryTimeline.add(galleryTween)
+					   .add(bgGalleryTween);
 		galleryScene.setTween(galleryTimeline);
 		controller.addScene(galleryScene);
 

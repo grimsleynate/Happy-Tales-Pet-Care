@@ -2,16 +2,39 @@ TOTAL TIME SPENT SO FAR; 505.68 minutes / 8.428 hours
 TOTAL TIME ESTIMATED SO FAR; 650 minutes / 10.83 hours
 
 Web Page Project:
-  ☐ General Todo:
-    ☐ Brainstorm "Let's Meet" Page Name @low @30minutes
+  General Todo:
+    ✔ Brainstorm "Let's Meet" Page Name @low @30minutes @Nate @Ash @started(19-06-09 15:32) @done(19-06-09 15:32) @lasted(36s)
 
   Home Page:
-    ☐ Copy Write About Us Card @low @1hour
-    ☐ Copy Write Services Section @low @45minutes
-    ☐ copy write parallax (best friend's new best friend, complimentary meet and greet) @low @45minutes
-    ☐ copy write why choose cards @low @30minutes
-    ☐ Link Hyperlinks (nav bar, buttons[5], gallery, testimonial[more]) @low @30m
+    ☐ Copy Write About Us Card @low @1hour @Ash 
+    ☐ Copy Write Services Section @low @45minutes @Ash 
+    ☐ copy write parallax (best friend's new best friend, complimentary meet and greet) @low @45minutes @Ash 
+    ☐ copy write why choose cards @low @30minutes @Ash 
+    ☐ Link Hyperlinks (nav bar, buttons[5], gallery, testimonial[more], logos in the footer) @low @30m @Nate 
 
+  About Us Page:
+    ☐ Link Hyperlinks (nav bar, logo, button[1], facebook and instagram logos in footer. @low @30m @Nate 
+    ✔ Center Contact Us button horizontally @high @today @15m @started(19-06-09 15:07) @done(19-06-09 15:07) @lasted(18s)
+    ☐ Change text size in gallery. @high @15m @Nate
+    ☐ Pick pictures for gallery[4] @low @20m @Ash 
+    ☐ Add pictures to gallery @low @20m @Nate 
+    ☐ Pick pictures for main parallax and for My Story card @low @20m @Ash  
+    ☐ Add pictures for main parallax and for My Story card @low @10m @Nate
+    ☐ Copy write Mission Statement @low @60m @Ash 
+    ☐ Copy write My Story Card @low @60m @Ash
+    ☐ Copy write animal descriptions in gallery @low @45m @Ash
+    ☐ Add transitions @high @2h @Nate
+    Make Mobile Responsive:
+
+  Services and Rates Page:
+    ✔ Build Wireframe @high @Ash @Nate @1.5h @started(19-06-09 16:30) @done(19-06-09 16:50) @lasted(19m38s)
+    
+  Our Friend Page:
+    ☐ Build Wireframe @high @Ash @Nate @1.5h 
+  F.A.Q. Page:
+    ☐ Build Wireframe @high @Ash @Nate @1.5h 
+  Contact Us Page: 
+    ☐ Build Wireframe @high @Ash @Nate @1.5h 
 Archive:
   ✔ Speed up transition on gallery @high @15m @started(19-04-22 10:10) @done(19-04-22 10:14) @lasted(4m1s) @project(Web Page Project.Home Page)
   ✔ Make "More Photos" on gallery one line @high @10m @started(19-04-22 10:16) @done(19-04-22 10:16) @lasted(38s) @project(Web Page Project.Home Page)
