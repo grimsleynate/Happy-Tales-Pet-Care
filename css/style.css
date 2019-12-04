@@ -594,7 +594,6 @@ footer i {
 .gallery-img {
 	max-width: 100%;
 	width: 90%;
-	filter: grayscale(100%);
 }
 
 .gallery-top-right, .gallery-top-left {
