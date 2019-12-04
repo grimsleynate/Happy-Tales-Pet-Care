@@ -33,41 +33,42 @@
     font-family: 'Signika', sans-serif;
     font-size: 16px;
     text-align: center;
-    color: var(--mainPurple);
+    color: var(--mainBlue);
     padding-top: 60px;
 }
 
 .basicServiceCard {
     position: relative;
-    color: var(--mainGray);
-    margin-top: 60px;
+    color: var(--mainBlue);
+    margin-top: 70px;
     width: 75%;
     left: 12.5%;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.39);
 }
 
 .basicServiceCard h3 {
-    color: var(--darkGray);
+    color: var(--mainPurple);
+    padding-top: 30px;
 }
 
 .basicServiceCard hr {
     border: 0.5px solid var(--lightGray);
-    width: 70%;
+    width: 80%;
     align-content: center;
-    position: relative;
+    position: relative; 
     margin-top: 16px;
 }
 
 .basicServiceCard p {
-    margin-bottom: 0;
+    margin-bottom: 10px;
 }
 
 .basicServiceCard p:first-of-type {
     margin-top: 40px;
 }
 
-.firstServiceCard {
-    margin-top: 120px;
+.basicServiceCard p:last-of-type {
+    padding-bottom: 40px;
 }
 
 .dropdownArrow {
@@ -85,12 +86,31 @@
     background-color: white;
 }
 
+#dropdownContentDogWalking, #dropdownContentPetSitting {
+    padding-bottom: 135px;
+}
+
+#dropdownContentOtherCritters {
+    padding-bottom: 60px;
+}
+
 .show {
     display: block;
 }
 
 .moveDropdown {
-    margin-top:1000px;
+    margin-top:635px;
+}
+
+#contactSection {
+    width: 100%;
+    align-content: center;
+    position: relative; 
+    bottom: 150px;
+}
+
+.moveContact {
+    margin-top: 800px;
 }
 
 button {
@@ -126,4 +146,5 @@ button:active {
 
 #dropDownSection {
     margin-top: 50px;
+    margin-bottom: 220px;
 }

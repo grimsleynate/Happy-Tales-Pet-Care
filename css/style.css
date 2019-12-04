@@ -554,7 +554,6 @@ footer.page-footer .footer-copyright {
 }
 
 .center-img {
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
  .footer-text {
@@ -731,15 +730,14 @@ footer i {
   padding: 8px 15px;
   font-size: 32px;
   font-family: inherit;
-	margin-left: 50%;
-	transform: translate(-50%, 0%);
+	margin-left: 45.5%;
 	margin-top: -24px;
 	position: relative;
 }
 .bttn-float.bttn-lg:hover,
 .bttn-float.bttn-lg:focus {
 					box-shadow: 0 30px 30px rgba(0,0,0,0.16);
-				  transform: scale(1.15) translate(-40%, -15px);
+				  transform: scale(1.15) translate(0, -15px);
 				  -webkit-transition: all 0.2s cubic-bezier(0.02, 0.01, 0.47, 1), -webkit-transform 0.2s cubic-bezier(0.02, 0.01, 0.47, 1);
 				  transition: all 0.2s cubic-bezier(0.02, 0.01, 0.47, 1), -webkit-transform 0.2s cubic-bezier(0.02, 0.01, 0.47, 1);
 				  transition: all 0.2s cubic-bezier(0.02, 0.01, 0.47, 1);
@@ -1217,6 +1215,8 @@ footer i {
 
 	.bttn-float.bttn-lg {
 		bottom: 0;
+		margin-top:-16px;
+		margin-left:30%;
 	}
 
 	#about-us {
