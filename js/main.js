@@ -46,35 +46,6 @@
 		whyChooseScene.setTween(whyChooseTimeline);
 		controller.addScene(whyChooseScene);
 
-		//This timeline runs through the gallery
-		var galleryTimeline = new TimelineMax;
-		var galleryScene = new ScrollMagic.Scene({triggerElement: ".gallery-bg", duration: 0});
-		var galleryTween = new TweenMax.staggerFrom(".gallery-img", 1.5, {
-			onUpdateParams:["{self}"],
-			onUpdate:function(tl){
-				var tlp = (tl.progress()*100)>>0;
-				TweenMax.set('.gallery-img' ,{
-					'-webkit-filter':'grayscale(' + (100 - tlp) + '%' + ')',
-					'filter':'grayscale(' + (100 - tlp) + '%' + ')'
-				});	
-			},
-			scale: 0.9
-		}, 0.3);
-		var bgGalleryTween = new TweenMax.staggerFrom(".gallery-bg", 1.5, {
-			onUpdateParams:["{self}"],
-			onUpdate:function(tl){
-				var tlp = (tl.progress()*100)>>0;
-				TweenMax.set('.gallery-bg' ,{
-					'-webkit-filter':'grayscale(' + tlp + '%' + ')',
-					'filter':'grascale(' + tlp + '%' + ')'	
-				});
-			},
-		 }, 0.3);
-		galleryTimeline.add(galleryTween)
-					   .add(bgGalleryTween);
-		galleryScene.setTween(galleryTimeline);
-		controller.addScene(galleryScene);
-
 		//This timeline runs through the contact section
 		var contactScene = new ScrollMagic.Scene({triggerElement: '#contact', duration: 0});
 		var contactTween = new TweenMax.from("#contact", 1.5, {opacity: 0, x: -100});
