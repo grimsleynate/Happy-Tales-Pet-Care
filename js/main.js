@@ -57,7 +57,7 @@
 	$(document).ready(function() {
 	//This Tween transitions the text on the beginning of the page.
 	TweenMax.from(".ml9", 1.5, {opacity: 0, scale: 0.85, ease:Power3.easeInOut});
-	TweenMax.from("#jumbotron-image", 1.5, {opacity: 0, scale: 0.85, ease:Power3.easeInOut, delay: 0.125});
+	TweenMax.from("#jumbotron-divider", 1.5, {opacity: 0, scale: 0.85, ease:Power3.easeInOut, delay: 0.125});
 	TweenMax.from(".jumbotron-subtitle", 1.5, {opacity: 0, scale: 0.85, ease:Power3.easeInOut, delay: 0.25});
 	TweenMax.from(".jumbotron-subtext", 1.5, {opacity: 0, scale: 0.85, ease:Power3.easeInOut, delay: 0.375});
 	});

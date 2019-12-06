@@ -182,6 +182,14 @@ hr {
 
 }
 
+.carousel-control-prev {
+	left: -13%;
+}
+
+.carousel-control-next {
+	right: -13%;
+}
+
 .card-half {
 	display:inline-block;
 	width: 50%;

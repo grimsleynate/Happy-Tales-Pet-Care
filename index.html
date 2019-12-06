@@ -16,13 +16,15 @@
 	  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <link href="css/style.css" rel="stylesheet">
     <!-- These are the javascript links to jquery, popper, Bootstrap, TweenMax, and custom javascript in that order. -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" async></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" async></script>
-    <script src="js/TweenMax.min.js" async></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" async></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js" async></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js" async></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.velocity.min.js" async></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" async></script>
+    <script defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" async></script>
+    <script defer src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.14.2/TweenMax.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/ScrollMagic.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/animation.gsap.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.velocity.min.js" async></script>
+    <script defer src="js/TweenMax.min.js" async></script>
+    
 </head>
 
   <body>
@@ -117,7 +119,7 @@
           </span>
         </h1>
         <!-- This is the paw and lines image. the src variable is where the picture is located in your folders. -->
-        <img id="jumbotron-image" src="img\paw-slider.png"/>
+        <img id="jumbotron-divider" src="img\paw-slider.png"/>
         <!-- The is the subtext below the paw and line image. -->
         <h2 class="jumbotron-subtitle">Professional pet sitting, dog walking and more in West Branch Michigan.</h2>
         <h2 class="jumbotron-subtext">Servicing the West Branch, Saint Helen, and Rose City areas in Northern Michigan.</h2>
@@ -448,6 +450,14 @@
         <!--Grid column-->
     </div>
   </div>
+  <a class="carousel-control-prev" href="#testimonial-carousel" role="button" data-slide="prev">
+      <span aria-hidden="true"><i class="fas fa-angle-left" style="font-size:64px;"></i></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#testimonial-carousel" role="button" data-slide="next">
+      <span aria-hidden="true"><i class="fas fa-angle-right" style="font-size:64px;"></i></span>
+      <span class="sr-only">Next</span>
+    </a>
 </div>
 </section>
 <!-- Section: Testimonials v.1 -->
@@ -586,15 +596,8 @@
             </div>
           </div>
     </div>
-    <a class="carousel-control-prev" href="#testimonial-carousel-mobile" role="button" data-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="carousel-control-next" href="#testimonial-carousel-mobile" role="button" data-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
 </div>
+
 </section>
 <!-- Section: Testimonials v.1 -->
 
