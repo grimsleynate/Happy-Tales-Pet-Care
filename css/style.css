@@ -544,7 +544,7 @@ footer.page-footer .footer-copyright {
 	left:2.5%;
 	border-style: none;
 	border-bottom: 1px solid var(--lightGray);
-
+	margin-top: 10px;
 }
 
 #more-photos {

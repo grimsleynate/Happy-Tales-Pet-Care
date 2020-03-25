@@ -2,8 +2,6 @@ TOTAL TIME SPENT SO FAR; 505.68 minutes / 8.428 hours
 TOTAL TIME ESTIMATED SO FAR; 650 minutes / 10.83 hours
 
 Web Page Project:
-  General Todo:
-    ✔ Brainstorm "Let's Meet" Page Name @low @30minutes @Nate @Ash @started(19-06-09 15:32) @done(19-06-09 15:32) @lasted(36s)
 
   Home Page:
     ☐ Copy Write About Us Card @low @1hour @Ash 
@@ -14,8 +12,7 @@ Web Page Project:
 
   About Us Page:
     ☐ Link Hyperlinks (nav bar, logo, button[1], facebook and instagram logos in footer. @low @30m @Nate 
-    ✔ Center Contact Us button horizontally @high @today @15m @started(19-06-09 15:07) @done(19-06-09 15:07) @lasted(18s)
-    ☐ Change text size in gallery. @high @15m @Nate
+    ✔ Change text size in gallery. @high @15m @Nate @started(20-03-25 15:54) @done(20-03-25 15:54) @lasted(52s)
     ☐ Pick pictures for gallery[4] @low @20m @Ash 
     ☐ Add pictures to gallery @low @20m @Nate 
     ☐ Pick pictures for main parallax and for My Story card @low @20m @Ash  
@@ -23,11 +20,8 @@ Web Page Project:
     ☐ Copy write Mission Statement @low @60m @Ash 
     ☐ Copy write My Story Card @low @60m @Ash
     ☐ Copy write animal descriptions in gallery @low @45m @Ash
-    ☐ Add transitions @high @2h @Nate @started(20-03-25 14:45)
-    Make Mobile Responsive:
+    ☐ Add transitions @high @2h @Nate 
 
-  Services and Rates Page:
-    ✔ Build Wireframe @high @Ash @Nate @1.5h @started(19-06-09 16:30) @done(19-06-09 16:50) @lasted(19m38s)
     
   Our Friend Page:
     ☐ Build Wireframe @high @Ash @Nate @1.5h 
@@ -36,6 +30,9 @@ Web Page Project:
   Contact Us Page: 
     ☐ Build Wireframe @high @Ash @Nate @1.5h 
 Archive:
+  ✔ Brainstorm "Let's Meet" Page Name @low @30minutes @Nate @Ash @started(19-06-09 15:32) @done(19-06-09 15:32) @lasted(36s) @project(Web Page Project.General Todo)
+  ✔ Center Contact Us button horizontally @high @today @15m @started(19-06-09 15:07) @done(19-06-09 15:07) @lasted(18s) @project(Web Page Project.About Us Page)
+  ✔ Build Wireframe @high @Ash @Nate @1.5h @started(19-06-09 16:30) @done(19-06-09 16:50) @lasted(19m38s) @project(Web Page Project.Services and Rates Page)
   ✔ Speed up transition on gallery @high @15m @started(19-04-22 10:10) @done(19-04-22 10:14) @lasted(4m1s) @project(Web Page Project.Home Page)
   ✔ Make "More Photos" on gallery one line @high @10m @started(19-04-22 10:16) @done(19-04-22 10:16) @lasted(38s) @project(Web Page Project.Home Page)
   ✔ increase font size on "more" button (testimonials) @high @10m @started(19-04-22 10:16) @done(19-04-22 10:19) @lasted(3m34s) @project(Web Page Project.Home Page)
