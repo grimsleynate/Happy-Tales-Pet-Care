@@ -28,12 +28,12 @@
 		aboutUsScene.setTween(aboutUsTimeline);
 		controller.addScene(aboutUsScene);
 
-		//This timeline runs trhough the services section.
+		//This timeline runs through the services section.
 		var servicesTimeline = new TimelineMax();
 		var servicesScene = new ScrollMagic.Scene({triggerElement: "#services", duration: 0});
-		var dogWalkingTween = TweenMax.from(".services-column", 1, {opacity: 0, x:-100});
+		var servicesTween = TweenMax.staggerFrom(".services-item", 1, {opacity: 0, x: -100}, 0.35);
 		servicesTimeline
-									.add(dogWalkingTween)
+									.add(servicesTween)
 		servicesScene.setTween(servicesTimeline);
 		controller.addScene(servicesScene);
 
@@ -45,6 +45,24 @@
 									.add(whyChooseTween);
 		whyChooseScene.setTween(whyChooseTimeline);
 		controller.addScene(whyChooseScene);
+
+		//This timeline runs through the left side of the gallery
+		var galleryLeftTimeline = new TimelineMax();
+		var galleryLeftScene = new ScrollMagic.Scene({triggerElement: "#gallery", duration: 0});
+		var galleryLeftTween = TweenMax.from("#gallery-left", 1, {opacity: 0, x: -200});
+		galleryLeftTimeline			
+									.add(galleryLeftTween);
+		galleryLeftScene.setTween(galleryLeftTween);
+		controller.addScene(galleryLeftScene);
+
+		//This timeline runs through the right side of the gallery
+		var galleryRightTimeline = new TimelineMax();
+		var galleryRightScene = new ScrollMagic.Scene({triggerElement: "#gallery", duration: 0});
+		var galleryRightTween = TweenMax.from("#gallery-right", 1, {opacity: 0, x: 200});
+		galleryRightTimeline			
+									.add(galleryRightTween);
+		galleryRightScene.setTween(galleryRightTween);
+		controller.addScene(galleryRightScene);
 
 		//This timeline runs through the contact section
 		var contactScene = new ScrollMagic.Scene({triggerElement: '#contact', duration: 0});

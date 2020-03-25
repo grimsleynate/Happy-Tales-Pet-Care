@@ -159,7 +159,7 @@
       <!-- This div wraps the first column of information, including the dog walking icon, the dog walking title,
       the dog walking text, and the learn now button. -->
       <div class="services-column">
-        <div id="dog-walking">
+        <div id="dog-walking" class="services-item">
           <!--This is the dog walking icon -->
           <img src="img/walking-the-dog-1.png" class=" services-icon"/>
           <!-- This is our title -->
@@ -174,7 +174,7 @@
           </button>
         </div>
       <!-- This is our second column -->
-      <div id="pet-sitting">
+      <div id="pet-sitting" class="services-item">
         <!-- This is our pet house icon -->
         <img src="img/pets-hotel-house-sign-with-a-paw.png" class="services-icon "/>
         <!-- This is our title -->
@@ -188,7 +188,7 @@
         </button>
       </div>
       <!-- This is our third column -->
-      <div id="other-services">
+      <div id="other-services" class="services-item">
         <!-- This is our bunny icon -->
         <img src="img/bunny-icon.png" class="services-icon "/>
         <!--This is our title text. -->
@@ -601,9 +601,10 @@
 </section>
 <!-- Section: Testimonials v.1 -->
 
+<!-- GALLERY -->
 <section id="gallery">
   <div class="scrolled-image gallery-bg">
-      <h2 class="card-title gallery-title">Our <span style="font-family:'Dancing Script', cursive;">Friends</span></h2>
+      <h2 class="card-title gallery-title" style="color: var(--mainBlue);">Our <span style="font-family:'Dancing Script', cursive;">Friends</span></h2>
       <div id="gallery-left">
         <img src="img\800x402.jpg" class="center-img gallery-img gallery-top-left"/>
         <img src="img\800x550.jpg" class="center-img gallery-img gallery-bot-left"/>
@@ -612,9 +613,13 @@
         <img src="img\800x570.jpg" class="center-img gallery-img gallery-top-right"/>
         <img src="img\800x380.jpg" class="center-img gallery-img gallery-bot-right"/>
       </div>
-      <a href="#" id="more-photos">More Photos</a>
+      <button class="bttn-lg bttn-float" style="top:60px;">
+        <!--This is the text for our button. -->
+        More Photos
+      </button>
   </div>
 </section>
+<!-- END GALLERY -->
 
 <section id="contact">
   <h2 class="card-title contact-title font-weight-light">Is your friend <span style="font-family: 'Courgette', cursive; color: var(--mainBlue);" class="font-weight-bold">ready to join</span> the Happy Tales Pack?</h2>
