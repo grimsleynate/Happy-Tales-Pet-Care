@@ -8,13 +8,6 @@
     transform: translate(-50%, 0);
 }
 
-.aboutUsCardTitleBackground {
-    width: 20%;
-    background-color: rgba(100, 100, 100, 0.4); 
-    margin-top: 45px;
-    border-radius: 15px;
-}
-
 @media screen and (min-width: 850px) {
     .intro-title {
         font-size: 62px;

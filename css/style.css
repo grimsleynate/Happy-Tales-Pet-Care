@@ -146,6 +146,14 @@ the width is the full width of the page */
 	*/
 }
 
+/*This styles the background for the card titles on each page */
+.titleCardTitleBackground {
+    width: 20%;
+    background-color: rgba(100, 100, 100, 0.4); 
+    margin-top: 45px;
+    border-radius: 15px;
+}
+
 .jumbotron-subtext {
 	color: white;
 	padding-top: 20px;
