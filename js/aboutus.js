@@ -12,5 +12,4 @@ $(function () {
         $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
         $navLink.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
         $navBrand.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
-    })
-});
+    }});
