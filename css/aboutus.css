@@ -1,0 +1,37 @@
+#myStory .row p {
+    font-size: 16px;
+}
+
+.aboutUsGalleryImg {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+@media screen and (min-width: 850px) {
+    .intro-title {
+        font-size: 62px;
+    }
+
+    p {
+        max-width: 850px;
+    }
+
+    .mission-statement {
+        padding-bottom: 30px;
+    }
+
+    #myStory {
+        max-width: 850px;
+    }
+
+    #myStory .row p, #missionStatement .row p {
+        font-size: 20px;
+    }
+
+    #location .card-title {
+        margin-bottom: 20px;
+    }
+
+    
+}
