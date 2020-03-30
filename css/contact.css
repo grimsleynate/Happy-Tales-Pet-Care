@@ -1,3 +1,36 @@
 #contactUsImg {
     background-image:url('two-cats.jpg');
 }
+
+.contact-intro-text {
+    width: 62%;
+    text-align: center;
+    font-size: 20px;
+    color: #808080;
+}
+
+.contact-intro-subtext {
+    width: 25%;
+    text-align: center;
+    color: #808080;
+    font-size: 22px;
+    font-family: "Signika", sans-serif;
+}
+
+.get-in-touch__container {
+    margin-top: 160px;
+}
+
+.get-in-touch__form {
+    width: 40%;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.get-in-touch__submit-button {
+    background-color: rgba(0,0,0,0);
+    color: var(--mainBlue);
+    padding-left: 1.75rem;
+    padding-right: 1.75rem;
+}

@@ -146,6 +146,10 @@ the width is the full width of the page */
 	*/
 }
 
+a {
+	color: var(--mainBlue);
+}
+
 /*This styles the background for the card titles on each page */
 .titleCardTitleBackground {
     width: 20%;
@@ -238,6 +242,7 @@ hr {
 body {
 	background-image: url('circles-light.png');
 }
+
 
 .scrolled-image {
 	background-image:url('parallax-img.jpg');
