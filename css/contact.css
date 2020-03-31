@@ -34,3 +34,78 @@
     padding-left: 1.75rem;
     padding-right: 1.75rem;
 }
+
+.get-in-touch__get-in-touch {
+    border-left: 2px solid #808080;
+}
+
+.get-in-touch__contact-info {
+    margin-top: 60px;
+    margin-left: 385px;
+}
+
+.get-in-touch__facebook {
+    margin-top: 30px;
+}
+
+.get-in-touch__facebook a, 
+.get-in-touch__instagram a{
+    color: var(--mainPurple);
+}
+
+.get-in-touch__facebook a:hover,
+.get-in-touch__instagram a:hover {
+    text-decoration: none;
+}
+
+.get-in-touch__facebook i, 
+.get-in-touch__instagram i {
+    font-size: 20px;
+}
+
+.get-in-touch__faq {
+    margin-top: 165px;
+}
+
+.get-in-touch__faq .get-in-touch__faq-p {
+    text-align: center;
+    width: 50%;
+    margin-left: 25%;
+}
+
+.get-in-touch__faq .get-in-touch__faq-a a {
+    margin-left: 0;
+    margin-top: 0;
+    font-size: 16px;
+}
+
+.call-to-action__container {
+    height: 550px;
+    margin-top: 60px;
+    background-image: linear-gradient(90deg, var(--mainBlue), var(--mainPurple));
+}
+
+.call-to-action__container .call-to-action__h3 {
+    padding-top: 250px;
+}
+
+.call-to-action__container .call-to-action__h3 h3{
+    color: white;
+}
+
+.call-to-action__container .call-to-action__a {
+    margin-top: 40px;
+}
+
+.call-to-action__container .call-to-action__a a{
+    background-color: white;
+    color: var(--mainPurple);
+    background-image: none;
+    margin-left: 0;
+    margin-top: 0;
+    font-size: 24px;
+}
+
+.call-to-action__a a.bttn-float.bttn-lg:hover {
+    box-shadow: 0 30px 30px rgba(0,0,0,0.5);
+}

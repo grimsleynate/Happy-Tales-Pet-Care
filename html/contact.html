@@ -18,14 +18,14 @@
         <link href="../css/contact.css" rel="stylesheet">
 
         <!-- These are the javascript links to jquery, popper, TweenMax, Bootstrap, and Scroll Magic in that order. -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" async></script>
-    <script defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" async></script>
-    <script defer src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.14.2/TweenMax.min.js"></script>
-    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/ScrollMagic.js"></script>
-    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/animation.gsap.js"></script>
-    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.velocity.min.js" async></script>
-    <script defer src="js/TweenMax.min.js" async></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <script defer src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" async></script>
+        <script defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" async></script>
+        <script defer src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.14.2/TweenMax.min.js"></script>
+        <script defer src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/ScrollMagic.js"></script>
+        <script defer src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/animation.gsap.js"></script>
+        <script defer src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.velocity.min.js" async></script>
+        <script defer src="js/TweenMax.min.js" async></script>
     </head>
     <body>
         <!--This is the Navbar -->
@@ -103,7 +103,6 @@
                             <div class="form-group">
                               <label for="inputPhone">Phone</label>
                               <input type="tel" class="form-control" id="inputPhone" name="phone" placeholder="800-555-1234" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
-                              <small>Format: 800-555-1234</small>
                             </div>
                             <div class="form-group">
                              <label for="inputEmail">E-Mail</label>
@@ -119,14 +118,36 @@
                     </div>
                 </div>
                 <div class="col-md get-in-touch__get-in-touch">
-                    <div class="d-flex justify-content-center"><h3>Get In Touch </h3></div>
+                    <div class="d-flex justify-content-center">
+                        <h3>Get In Touch </h3>
+                    </div>
                     <div class="get-in-touch__contact-info">
                         <p>Happy Tales Pet Care</p>
-                        <div>
+                        <div class="get-in-touch__phone">
                             <p style="display:inline;">Phone: &emsp;</p><a href="tel:1-989-345-1672">1-989-345-1772</a> 
                         </div>
-                        <div>
+                        <div class="get-in-touch__email">
                             <p style="display:inline;">E-Mail: &emsp;</p><a <a href="mailto:ferella16@ymail.com?Subject=Happy%20Tales%20Inquiry" target="_top">ferrella16@ymail.com</a> 
+                        </div>
+                        <div class="get-in-touch__facebook">
+                            <a href="#">
+                                <i class="fab fa-facebook-f fa-2x social-icon-fb" style="margin-left: 0;"></i>
+                                <p style="display:inline;">&ensp; &thinsp; Facebook</p>
+                            </a>
+                        </div>
+                        <div class="get-in-touch__instagram">
+                            <a href="#">
+                                <i class="fab fa-instagram fa-2x social-icon-insta" style="margin-left: 0;"></i>
+                                <p style="display:inline;">&ensp; Instagram</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="get-in-touch__faq">
+                        <div class="get-in-touch__faq-p d-flex justify-content-center">
+                            <p>Check out the F.A.Q. to see if the question you have has already been answered.</p>
+                        </div>
+                        <div class="get-in-touch__faq-a d-flex justify-content-center">
+                            <a href="faq.html" class="bttn-float bttn-lg bttn-jumbo">Head to the FAQ!</a>
                         </div>
                     </div>
                 </div>
@@ -134,8 +155,19 @@
         </div>
         <!-- END OF Get In Touch Section-->
         
+        <!-- Call To Action Div-->
+        <div class="container-fluid call-to-action__container">
+            <div class="call-to-action__h3 d-flex justify-content-center">
+                <h3> Leaving your pets at home has never been easier!</h3>
+            </div>
+            <div class="call-to-action__a d-flex justify-content-center">
+                <a href="servicesandrates.html" class="bttn-float bttn-lg bttn-jumbo">Check out our services</a>
+            </div>
+        </div>
+        <!--END OF Call To Action Div-->
+
         <!-- Footer -->
-         <footer class="page-footer font-small blue pt-4">
+         <footer class="page-footer font-small blue pt-4" style="margin-top: 0;">
             <!-- Footer Links -->
             <div class="container-fluid text-center text-md-left">
                 <div class="row">

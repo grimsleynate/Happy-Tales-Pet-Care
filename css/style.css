@@ -239,6 +239,12 @@ hr {
 	position: relative;
 }
 
+a.bttn-float:hover {
+	color: white;
+	text-decoration: none;
+	cursor: pointer;
+}
+
 body {
 	background-image: url('circles-light.png');
 }
@@ -711,7 +717,8 @@ footer i {
 .bttn-float:hover,
 .bttn-float:focus {
   box-shadow: 0 30px 30px rgba(0,0,0,0.16);
-  transform: scale(1.15);
+  -webkit-transform: translateY(-10px);
+		  transform: translateY(-10px);
   -webkit-transition: all 0.2s cubic-bezier(0.02, 0.01, 0.47, 1), -webkit-transform 0.2s cubic-bezier(0.02, 0.01, 0.47, 1);
   transition: all 0.2s cubic-bezier(0.02, 0.01, 0.47, 1), -webkit-transform 0.2s cubic-bezier(0.02, 0.01, 0.47, 1);
   transition: all 0.2s cubic-bezier(0.02, 0.01, 0.47, 1);
@@ -754,12 +761,12 @@ footer i {
   font-family: inherit;
 	margin-left: 45.5%;
 	margin-top: -24px;
-	position: relative;
 }
 .bttn-float.bttn-lg:hover,
 .bttn-float.bttn-lg:focus {
-					box-shadow: 0 30px 30px rgba(0,0,0,0.16);
-				  transform: scale(1.15) translate(0, -15px);
+				  box-shadow: 0 30px 30px rgba(0,0,0,0.16);
+				  -webkit-transform: translateY(-12px);
+				  		  transform: translateY(-12px);
 				  -webkit-transition: all 0.2s cubic-bezier(0.02, 0.01, 0.47, 1), -webkit-transform 0.2s cubic-bezier(0.02, 0.01, 0.47, 1);
 				  transition: all 0.2s cubic-bezier(0.02, 0.01, 0.47, 1), -webkit-transform 0.2s cubic-bezier(0.02, 0.01, 0.47, 1);
 				  transition: all 0.2s cubic-bezier(0.02, 0.01, 0.47, 1);
