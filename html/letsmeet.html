@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <!-- Meta Tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Site Title-->
+        <title>Happy Tales | Let's Meet!</title> 
+
+        <!-- These are the links to custome fonts (Signika, Dancing Script, and Courgette),
+		 Bootstrap CSS, Font Awesome Icons, and custom css in that order. -->
+        <link href="https://fonts.googleapis.com/css?family=Lato|Signika|Dancing+Script|Courgette" rel="stylesheet">
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet">
+	    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+        <link href="../css/style.css" rel="stylesheet">
+        <link href="../css/letsmeet.css" rel="stylesheet">
+
+        <!-- These are the javascript links to jquery, popper, TweenMax, Bootstrap, and Scroll Magic in that order. -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <script defer src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" async></script>
+        <script defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" async></script>
+        <script defer src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.14.2/TweenMax.min.js"></script>
+        <script defer src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/ScrollMagic.js"></script>
+        <script defer src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/animation.gsap.js"></script>
+        <script defer src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.velocity.min.js" async></script>
+        <script defer src="js/TweenMax.min.js" async></script>
+    </head>
+    <body>
+        <!--This is the Navbar -->
+        <!-- navbar defines this as a Bootstrap navbar, navbar-expand-lg
+            makes it collapse into a hamburger icon on smaller screens -->
+        <nav class="navbar fixed-top navbar-expand-lg bg-transparent navbar-light">
+            <a class="navbar-brand" href="../index.html">Happy Tales</a>
+            <!--This is the code for the toggler. data-target and aria-controls
+                must be equal to the navigation list's div id. -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="color:white;">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <!-- This is the start of the navigation list. The div id must
+                be equal to the button's data-target and aria-controls. -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <!-- ml-auto aligns the content to the right -->
+                <ul class="navbar-nav ml-auto">
+                    <!-- nav-item is required for each li in this list
+                        and nav-link is required for each anchor link.
+                        active styles this item as an active item. -->
+                    <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="aboutus.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="servicesandrates.html">Services & Rates</a></li>
+                    <li class="nav-item"><a class="nav-link" href="letsmeet.html">Let's Meet</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Our Friends</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">F.A.Q.</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
+                </ul>
+        </nav>
+        <!-- END OF Navbar-->
+
+        <!--Hero image / parallax-->
+        <div id="introParallax" class="container-fluid">
+            <div class="row">
+                <div id="letsMeetImg" class="intro-parallax-img">
+                    <div class="d-flex justify-content-center">                
+                        <div class="titleCardTitleBackground">
+                            <h2 class="card-title intro-title" style="color: white;">Let's <span class="accent">Meet</span></h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END OF Hero image / parallax-->
+
+        <!-- Intro Text-->
+        <div class="intro-text__container">
+            <div class="intro-text__quote d-flex justify-content-center">
+                <p class="intro-text__quote-p">"Pets are humanizing.  They remind us we have an obligation and responsibility to preserve and nurture and care for all life."</p>
+            </div>
+        </div>
+        <!-- END OF Intro Text-->
+
+        <!-- Schedule Form-->
+        <div class="container-fluid schedule-form__container">
+            <div class="schedule-form__title row d-flex justify-content-center">
+                <h2 class="card-title contact-title font-weight-light">Is your friend <span style="font-family: 'Courgette', cursive; color: var(--mainBlue);" class="font-weight-bold">ready to join</span> the Happy Tales Pack?</h2>
+            </div>
+            <div class="schedule-form__subtitle d-flex justify-content-center">
+                <p class="schedule-form__subtitle-p">
+                    Our happy clients come in many shapes, sizes and colors.  Let Happy Tales make you and your fur babies happy; we're certain you won't regret it!
+                </p>
+            </div>
+            <div class="row schedule-form__row">
+                <div class="col-md schedule-form__form-column">
+                    <div class="d-flex justify-content-center schedule-form__form-column-title">
+                        <h3 class="schedule-form__form-column-title-h3">Schedule Your Meet & Greet</h3>
+                    </div>
+                    <div class="d-flex justify-content-center schedule-form__form-column-subtitle">
+                        <p class="schedule-form__form-column-subtitle-p">Please fill out this form and we will be in touch.</p>
+                    </div>
+                    <div class="schedule-form__form">
+                        <form>
+                            <div class="form-group">
+                                <label for="form__name">Full Name</label>
+                                <input type="text" class="form-control" id="form__name" placeholder="Enter Your Full Name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="form__phone">Phone Number</label>
+                                <input type="text" class="form-control" id="form__phone" placeholder="555-555-5555" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="form__email">Email</label>
+                                <input type="email" class="form-control" id="form__email" placeholder="example@example.com" required>
+                            </div>
+                             <div class="form-group">
+                                <label for="form__address">Address</label>
+                                <input type="text" class="form-control" id="form__address" placeholder="1234 Main St." required>
+                                <small>We do not share this information with anyone.</small>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <div class="form-group schedule-form__form-city">
+                                    <label for="form__city">City</label>
+                                    <input type="text" class="form-control" id="form__city" placeholder="West Branch" required>
+                                </div>
+                                <div class="form-group schedule-form__form-zip">
+                                    <label for="form__zip">ZIP Code</label>
+                                    <input type="text" class="form-control" id="form__zip" placeholder="12345" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="form__service-needed">Service Needed:</label>
+                                <select class="form-control" id="form__service-needed" required>
+                                  <option>Pet Sitting (drop-by)</option>
+                                  <option>Dog Walking</option>
+                                  <option>Other</option>
+                                </select>
+                            </div> 
+                            <div class="form-group">
+                                <label for="form__other">If Other, please specify: </label>
+                                <textarea class="form-control" id="form__other" rows="1"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="form__dates">Dates Needed</label>
+                                <input type="text" class="form-control" id="form__dates" placeholder="March 05, 2020 - March 10, 2020" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="form__medication">Does your pet require special care or medication? If so, what?</label>
+                                <textarea class="form-control" id="form__medication" rows="2"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="form__more-info">Please briefly summarize the pets needing service (type, gender, age, temparement).</label>
+                                <textarea class="form-control" id="form__more-info" rows="5" placeholder="One male dog, three years old.  Very friendly with people, cautious around other animals."></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary schedule-form__submit-button">Submit</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-md schedule-form__download-docs-column">
+                    <div class="d-flex justify-content-center schedule-form__form-column-title">
+                        <h3 class="schedule-form__form-column-title-h3">What To Expect At The Meet & Greet</h3>
+                    </div>
+                    <div class="d-flex justify-content-center schedule-form__download-docs-column__text">
+                        <p class="schedule-form__download-docs-column-p">
+                            The meet and greet will be with Ashley and you and your fur family. Usually they will last for 30 minutes. 
+                            I like to have some one on one time with your pets in order to make sure they are comfortable with me. Also just go though your daily routine with me. 
+                            Where there food, water, leashes, treats all that stuff is located. If your pet goes outside, I like to walk around the yard and yet let me know there 
+                            outside rules and what they like to do out there.
+                        </p>
+                    </div>
+                    <div class="d-flex justify-content-center schedule-form__download-docs-column__text">
+                        <p class="schedule-form__download-docs-column-p">
+                            If you are able to, we would like you to have these forms filled out and signed upon meet and greet. 
+                            If not I will bring an extra set to fill out there. That will cause the time of the meet and greet to be a little bit longer.
+                        </p>
+                    </div>
+                    <div class="d-flex justify-content-center schedule-form_download-docs-column__buttons">
+                        <div class="schedule-form__download-docs-column__client-info">
+                            <a href="../docs/test.pdf" target="_blank" class="bttn-float bttn-lg bttn-jumbo" download>Client/Pet Information</a>
+                        </div>
+                        <div class="schedule-form__download-docs-column__contract">
+                            <a href="faq.html" class="bttn-float bttn-lg bttn-jumbo">Contract Agreement</a>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-center schedule-form__download-docs-column__map-text">
+                        <p class="schedule-form__download-docs-column__map-text-p">
+                            Service Areas are West Branch, Rose City and Saint Helen as long as it is 20 minutes of my location. 
+                            Any services that are out of my range will be an .50cents per miles added on to the service. 
+                            If you aren't sure if you are in our service range feel free to fill out the form and we will let you know for you. 
+                        </p>
+                    </div>
+                    <div class="row d-flex justify-content-center">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d729511.5797693656!2d-84.80110645733522!3d44.419732795145535!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8820f753dd309057%3A0xcab1dd7828e7fc6f!2sHappy+Tales+Pet+Care!5e0!3m2!1sen!2sus!4v1556474954205!5m2!1sen!2sus" 
+                                width="550" height="430" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END OF Schedule Form-->
+
+         <!-- Call To Action Div-->
+         <div class="container-fluid call-to-action__container">
+            <div class="call-to-action__h3 d-flex justify-content-center">
+                <h3> Leaving your pets at home has never been easier!</h3>
+            </div>
+            <div class="call-to-action__a d-flex justify-content-center">
+                <a href="servicesandrates.html" class="bttn-float bttn-lg bttn-jumbo">Check out our services</a>
+            </div>
+        </div>
+        <!--END OF Call To Action Div-->
+
+        <!-- Footer -->
+         <footer class="page-footer font-small blue pt-4" style="margin-top: 0;">
+            <!-- Footer Links -->
+            <div class="container-fluid text-center text-md-left">
+                <div class="row">
+                    <div class="col-md-4 mt-md-0 mt-3">
+                        <h5 class="text-uppercase font-weight-bold">Contact</h5>
+                        <i class="fas fa-phone"></i> <p class="footer-text footer-contact-text">(989)217-6097</p><br/>
+                        <i class="fas fa-envelope"></i> <p class="footer-text footer-contact-text">happytalespetcare@gmail.com</p>
+                        <br/><br/>
+                        <p class="footer-text" style="margin-bottom:1rem;">Servicing West Branch, Saint Helen & Rose City</p>
+                        <p class="footer-text">Out of service area? Contact us today to figure</p>
+                        <p class="footer-text">something out!</p>
+                    </div>
+                    <div class="col-md-4 mt-md-0 mt-3">
+                        <h5 class="text-uppercase font-weight-bold">Office Hours</h5>
+                        <p class="footer-text">Monday:    8:00 AM - 8:00 PM</p>
+                        <p class="footer-text">Tusday:    8:00 AM - 8:00 PM</p>
+                        <p class="footer-text">Wednesday: 8:00 AM - 8:00 PM</p>
+                        <p class="footer-text">Thursday:  8:00 AM - 8:00 PM</p>
+                        <p class="footer-text">Friday:    8:00 AM - 8:00 PM</p>
+                        <p class="footer-text">Saturday:  9:00 AM - 4:00 PM</p>
+                        <p class="footer-text">Sunday:   12:00 PM - 4:00 PM</p>
+                    </div>
+                    <div class="col-md-4 mt-md-0 mt-3">
+                        <h5 class="text-uppercase font-weight-bold">Let's Connect!</h5>
+                        <p class="footer-text"> Follow us on Facebook and Instagram</p>
+                        <p class="footer-text"> for all of the latest Happy Tales news!</p>
+                        <div>
+                            <i class="fab fa-facebook-f fa-2x social-icon-fb"></i>
+                            <i class="fab fa-instagram fa-2x social-icon-insta"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="footer-break"/>
+            <div class="footer-copyright text-center py-3">© 2020 Copyright:
+                <a href="https://deadhead.media" style="color: var(--mainBlue);"> DeadHead.Media</a>
+            </div>
+        </footer>
+        <!--END OF Footer -->
+
+        <script src="../js/letsmeet.js"></script>
+    </body>
+</html>

@@ -1,0 +1,87 @@
+#letsMeetImg {
+    background-image:url('img/hero-dog-ball.jpg');
+}
+
+.intro-text__quote-p{
+    font-size: 26px;
+    color: #808080;
+    width: 57%;
+    padding-left: 80px;
+    margin-top: 60px;
+    border-left: 2px solid var(--mainBlue);
+}
+
+.schedule-form__subtitle {
+    margin-top: 30px;
+}
+
+.schedule-form__subtitle-p {
+    width: 45%;
+    text-align: center;
+    font-size: 22px;
+}
+
+.schedule-form__row {
+    margin-top: 120px;
+}
+
+.schedule-form__form-column-title-h3 {
+    font-size: 40px;
+    font-weight: 300;
+}
+
+.schedule-form__form {
+    width: 60%;
+    margin-left: 20%;
+}
+
+.schedule-form__form-city {
+    width: 60%;
+}
+
+.schedule-form__form-zip {
+    width: 35%;
+}
+
+.schedule-form__submit-button {
+    background-color: rgba(0,0,0,0);
+    color: var(--mainBlue);
+    padding-left: 1.75rem;
+    padding-right: 1.75rem;
+}
+
+.schedule-form__download-docs-column {
+    border-left: 2px solid #808080;
+}
+
+.schedule-form__download-docs-column__text {
+    margin-top: 70px;
+    width: 80%;
+    margin-left: 10%;
+    text-align: center;
+}
+
+.schedule-form_download-docs-column__buttons .schedule-form__download-docs-column__client-info a,
+.schedule-form_download-docs-column__buttons .schedule-form__download-docs-column__contract a{
+    margin-left: 0;
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+.schedule-form_download-docs-column__buttons .schedule-form__download-docs-column__client-info {
+    margin-left: -150px;
+}
+
+.schedule-form_download-docs-column__buttons .schedule-form__download-docs-column__contract {
+    margin-left: 250px;
+}
+
+.schedule-form__download-docs-column__map-text {
+    margin-top: 200px;
+}
+
+.schedule-form__download-docs-column__map-text-p {
+    font-size: 16px;
+    text-align: center;
+    color: var(--mainPurple);
+}

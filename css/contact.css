@@ -1,5 +1,5 @@
 #contactUsImg {
-    background-image:url('two-cats.jpg');
+    background-image:url('img/two-cats.jpg');
 }
 
 .contact-intro-text {
@@ -77,35 +77,4 @@
     margin-left: 0;
     margin-top: 0;
     font-size: 16px;
-}
-
-.call-to-action__container {
-    height: 550px;
-    margin-top: 60px;
-    background-image: linear-gradient(90deg, var(--mainBlue), var(--mainPurple));
-}
-
-.call-to-action__container .call-to-action__h3 {
-    padding-top: 250px;
-}
-
-.call-to-action__container .call-to-action__h3 h3{
-    color: white;
-}
-
-.call-to-action__container .call-to-action__a {
-    margin-top: 40px;
-}
-
-.call-to-action__container .call-to-action__a a{
-    background-color: white;
-    color: var(--mainPurple);
-    background-image: none;
-    margin-left: 0;
-    margin-top: 0;
-    font-size: 24px;
-}
-
-.call-to-action__a a.bttn-float.bttn-lg:hover {
-    box-shadow: 0 30px 30px rgba(0,0,0,0.5);
 }
