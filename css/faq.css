@@ -1,0 +1,61 @@
+#faqImg {
+    background-image:url('img/hero-rabbit.jpg');
+}
+
+.intro-text__quote-p{
+    font-size: 26px;
+    color: #808080;
+    width: 57%;
+    padding-left: 80px;
+    margin-top: 60px;
+    border-left: 2px solid var(--mainBlue);
+}
+
+.intro-text__subtitle {
+    margin-top: 100px;
+}
+
+.intro-text__subtitle-p {
+    font-size: 36px;
+    font-weight: 300;
+}
+
+.faq__card {
+    position: relative;
+}
+
+.faq__card button {
+    color: #808080;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.faq__card button:hover {
+    text-decoration: none;
+    color: #505050;
+}
+
+.faq__card button:focus {
+    text-decoration: none;
+    color: #808080;
+}
+
+.faq__card h2 {
+    text-align: center;
+}
+
+.faq__accent-text {
+    color: var(--mainBlue);
+    font-family: 'Signika', sans-serif;
+}
+
+.faq__card .card-body {
+    font-size: 18px;
+    width: 90%;
+    margin-left: 5%;
+    text-align: center;
+}
+
+#cancellationCollapse .card-body {
+    text-align: left;
+}
