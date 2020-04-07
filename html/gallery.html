@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <!-- Meta Tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Site Title-->
+        <title>Happy Tales | Our Friends</title> 
+
+        <!-- These are the links to custome fonts (Signika, Dancing Script, and Courgette),
+		 Bootstrap CSS, Font Awesome Icons, and custom css in that order. -->
+        <link href="https://fonts.googleapis.com/css?family=Lato|Signika|Dancing+Script|Courgette" rel="stylesheet">
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet">
+	    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+        <link href="../css/style.css" rel="stylesheet">
+        <link href="../css/gallery.css" rel="stylesheet">
+
+        <!-- These are the javascript links to jquery, popper, TweenMax, Bootstrap, and Scroll Magic in that order. -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <script defer src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" async></script>
+        <script defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" async></script>
+        <script defer src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.14.2/TweenMax.min.js"></script>
+        <script defer src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/ScrollMagic.js"></script>
+        <script defer src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/animation.gsap.js"></script>
+        <script defer src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.velocity.min.js" async></script>
+        <script defer src="js/TweenMax.min.js" async></script>
+    </head>
+    <body>
+        <!--This is the Navbar -->
+        <!-- navbar defines this as a Bootstrap navbar, navbar-expand-lg
+            makes it collapse into a hamburger icon on smaller screens -->
+        <nav class="navbar fixed-top navbar-expand-lg bg-transparent navbar-light">
+            <a class="navbar-brand" href="../index.html">Happy Tales</a>
+            <!--This is the code for the toggler. data-target and aria-controls
+                must be equal to the navigation list's div id. -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="color:white;">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <!-- This is the start of the navigation list. The div id must
+                be equal to the button's data-target and aria-controls. -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <!-- ml-auto aligns the content to the right -->
+                <ul class="navbar-nav ml-auto">
+                    <!-- nav-item is required for each li in this list
+                        and nav-link is required for each anchor link.
+                        active styles this item as an active item. -->
+                    <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="aboutus.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="servicesandrates.html">Services & Rates</a></li>
+                    <li class="nav-item"><a class="nav-link" href="letsmeet.html">Let's Meet</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html">Our Friends</a></li>
+                    <li class="nav-item"><a class="nav-link" href="faq.html">F.A.Q.</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+                </ul>
+        </nav>
+        <!-- END OF Navbar-->
+
+        <!--Hero image / parallax-->
+        <div id="introParallax" class="container-fluid">
+            <div class="row">
+                <div id="galleryImg" class="intro-parallax-img">
+                    <div class="d-flex justify-content-center">                
+                        <div class="titleCardTitleBackground">
+                            <h2 class="card-title intro-title" style="color: white;">Our <span class="accent">Friends</span></h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END OF Hero image / parallax-->
+
+        <!-- Intro Text-->
+        <div class="intro-text__container">
+            <div class="intro-text__quote d-flex justify-content-center">
+                <p class="intro-text__quote-p">“An animal’s eyes have the power to speak a great language.” <br> <span class="accent">Martin Buber, German Philosopher</span></p>
+            </div>
+        </div>
+        <!-- END OF Intro Text-->
+
+        <!-- Gallery -->
+        <div class="container gallery__container" style="max-height: 5260px;">
+            <!-- Row 1 -->
+            <div class="row gallery_row gallery__row-1">
+                <div class="col-md gallery-img">
+                    <img src="../img/Gallery/1_Kelly.jpg" class="gallery__img-img" alt="Orange and White Cat on a Bed."/>
+                    <div class="gallery__img-overlay" id="gallery__img-overlay-1">
+                        <h3>Kelly</h3>
+                        <p>This is Kelly!  He is very playful and adventurous.</p>
+                        <small>See why Kelly loves our visits, set up a Meet & Greet now!</small>
+                        <a href="letsmeet.html" class="bttn-float bttn-lg bttn-jumbo overlay-bttn">Let's Meet!</a>
+                    </div>
+                </div>
+                <div class="col-md gallery-img">
+                    <img src="../img/Gallery/2_Bella.jpg" class="gallery__img-img" alt="Female Pomeranian Mix Looking At Camera"/>
+                    <div class="gallery__img-overlay" id="gallery__img-overlay-2">
+                        <h3>Bella</h3>
+                        <p>This is Bella!  She loves to cuddle and play with her ball.</p>
+                        <small>See why Bella loves our visits, set up a Meet & Greet now!</small>
+                        <a href="letsmeet.html" class="bttn-float bttn-lg bttn-jumbo overlay-bttn">Let's Meet!</a>
+                    </div>
+                </div>
+                <div class="col-md gallery-img">
+                    <img src="../img/Gallery/3_Gus.jpg" class="gallery__img-img" alt="Brown poodle lying outside with his ball."/>
+                    <div class="gallery__img-overlay" id="gallery__img-overlay-3">
+                        <h3>Gus</h3>
+                        <p>This is Gus!  Gus can't leave home without his ball.</p>
+                        <small>See why Gus loves our social training, set up a Meet & Greet!</small>
+                        <a href="letsmeet.html" class="bttn-float bttn-lg bttn-jumbo overlay-bttn">Let's Meet!</a>
+                    </div>
+                </div>
+            </div>
+            <!--END OF Row 1-->
+
+            <!-- Row 2-->
+            <div class="row gallery_row gallery__row-2">
+                <div class="col-md gallery-img">
+                    <img src="../img/Gallery/4_Tucker.jpg" class="gallery__img-img" alt="Male Jack Russel outside staring into the distance."/>
+                    <div class="gallery__img-overlay" id="gallery__img-overlay-4">
+                        <h3>Tucker</h3>
+                        <p>This is Tucker! Tucker is a beautiful Jack Russel.  He loves it when we stop by and say hi!</p>
+                        <small>See why Kelly loves our visits, set up a Meet & Greet now!</small>
+                        <a href="letsmeet.html" class="bttn-float bttn-lg bttn-jumbo overlay-bttn">Let's Meet!</a>
+                    </div>
+                </div>
+                <div class="col-md gallery-img" style="top: -116px;">
+                    <img src="../img/Gallery/5_Teko.jpg" class="gallery__img-img" alt="Old female dog looking at the camera."/>
+                    <div class="gallery__img-overlay" id="gallery__img-overlay-5">
+                        <h3>Teko</h3>
+                        <p>This is Teko! Teko is one of six dogs in his family.  All of their high energy helps keep him young!</p>
+                        <small>See why Teko loves our visits, set up a Meet & Greet now!</small>
+                        <a href="letsmeet.html" class="bttn-float bttn-lg bttn-jumbo overlay-bttn">Let's Meet!</a>
+                    </div>
+                </div>
+                <div class="col-md gallery-img">
+                    <img src="../img/Gallery/6_Mia.jpg" class="gallery__img-img" alt="Small golden dog getting pets."/>
+                    <div class="gallery__img-overlay" id="gallery__img-overlay-6">
+                        <h3>Mia</h3>
+                        <p>This is Mia! She loves belly rubs, she could soak up the love all day!</p>
+                        <small>See why Mia loves our visits, set up a Meet & Greet now!</small>
+                        <a href="letsmeet.html" class="bttn-float bttn-lg bttn-jumbo overlay-bttn">Let's Meet!</a>
+                    </div>
+                </div>
+            </div>
+            <!-- END OF Row 2-->
+
+            <!-- Row 3-->
+            <div class="row gallery_row gallery__row-3">
+                <div class="col-md gallery-img" style="top:-67px;">
+                    <img src="../img/Gallery/7_Lucy.jpg" class="gallery__img-img" alt="Female Collie sitting in the woods."/>
+                    <div class="gallery__img-overlay" id="gallery__img-overlay-7">
+                        <h3>Lucy</h3>
+                        <p>This is Lucy! Lucy loves to go for walks out in the woods.</p>
+                        <small>See why Lucy loves our walks, set up a Meet & Greet now!</small>
+                        <a href="letsmeet.html" class="bttn-float bttn-lg bttn-jumbo overlay-bttn">Let's Meet!</a>
+                    </div>
+                </div>
+                <div class="col-md gallery-img" style="top: -279px;">
+                    <img src="../img/Gallery/8_Luke.jpg" class="gallery__img-img" alt="Male Retriever looking at the carmera."/>
+                    <div class="gallery__img-overlay" id="gallery__img-overlay-8">
+                        <h3>Luke</h3>
+                        <p>This is Teko! Teko is one of six dogs in his family.  All of their high energy helps keep him young!</p>
+                        <small>See why Teko loves our visits, set up a Meet & Greet now!</small>
+                        <a href="letsmeet.html" class="bttn-float bttn-lg bttn-jumbo overlay-bttn">Let's Meet!</a>
+                    </div>
+                </div>
+                <div class="col-md gallery-img">
+                    <img src="../img/Gallery/9_Little-Bear.jpg" class="gallery__img-img" alt="Older female dog smiling for the camera."/>
+                    <div class="gallery__img-overlay" id="gallery__img-overlay-9">
+                        <h3>Mia</h3>
+                        <p>This is Mia! She loves belly rubs, she could soak up the love all day!</p>
+                        <small>See why Mia loves our visits, set up a Meet & Greet now!</small>
+                        <a href="letsmeet.html" class="bttn-float bttn-lg bttn-jumbo overlay-bttn">Let's Meet!</a>
+                    </div>
+                </div>
+            </div>
+            <!-- END OF Row 3-->
+
+            <!-- Row 4-->
+            <div class="row gallery_row gallery__row-4">
+                <div class="col-md gallery-img" style="top:-230px;">
+                    <img src="../img/Gallery/10_Mia.jpg" class="gallery__img-img" alt="Small female dog on her side."/>
+                    <div class="gallery__img-overlay" id="gallery__img-overlay-10">
+                        <h3>Lucy</h3>
+                        <p>This is Lucy! Lucy loves to go for walks out in the woods.</p>
+                        <small>See why Lucy loves our walks, set up a Meet & Greet now!</small>
+                        <a href="letsmeet.html" class="bttn-float bttn-lg bttn-jumbo overlay-bttn">Let's Meet!</a>
+                    </div>
+                </div>
+                <div class="col-md gallery-img" style="top: -279px;">
+                    <img src="../img/Gallery/11_Cody.jpg" class="gallery__img-img" alt="Male Retriever looking at the carmera."/>
+                    <div class="gallery__img-overlay" id="gallery__img-overlay-11">
+                        <h3>Luke</h3>
+                        <p>This is Teko! Teko is one of six dogs in his family.  All of their high energy helps keep him young!</p>
+                        <small>See why Teko loves our visits, set up a Meet & Greet now!</small>
+                        <a href="letsmeet.html" class="bttn-float bttn-lg bttn-jumbo overlay-bttn">Let's Meet!</a>
+                    </div>
+                </div>
+                <div class="col-md gallery-img" style="top: -250px;">
+                    <img src="../img/Gallery/12_Fritzy -and-Baby-Bear.jpg" class="gallery__img-img" alt="Older female dog smiling for the camera."/>
+                    <div class="gallery__img-overlay" id="gallery__img-overlay-12">
+                        <h3>Mia</h3>
+                        <p>This is Mia! She loves belly rubs, she could soak up the love all day!</p>
+                        <small>See why Mia loves our visits, set up a Meet & Greet now!</small>
+                        <a href="letsmeet.html" class="bttn-float bttn-lg bttn-jumbo overlay-bttn">Let's Meet!</a>
+                    </div>
+                </div>
+            </div>
+        <!-- END OF Row 4-->
+
+        <!-- Row 5-->
+        <div class="row gallery_row gallery__row-5">
+            <div class="col-md gallery-img" style="top:-350px;">
+                <img src="../img/Gallery/13_Gus-and-Cody.jpg" class="gallery__img-img" alt="Small female dog on her side."/>
+                <div class="gallery__img-overlay" id="gallery__img-overlay-13">
+                    <h3>Lucy</h3>
+                    <p>This is Lucy! Lucy loves to go for walks out in the woods.</p>
+                    <small>See why Lucy loves our walks, set up a Meet & Greet now!</small>
+                    <a href="letsmeet.html" class="bttn-float bttn-lg bttn-jumbo overlay-bttn">Let's Meet!</a>
+                </div>
+            </div>
+            <div class="col-md gallery-img" style="top: -369px;">
+                <img src="../img/Gallery/14_Willy.jpg" class="gallery__img-img" alt="Male Retriever looking at the carmera."/>
+                <div class="gallery__img-overlay" id="gallery__img-overlay-14">
+                    <h3>Luke</h3>
+                    <p style="margin-top: 20px;">This is Teko! Teko is one of six dogs in his family.  All of their high energy helps keep him young!</p>
+                    <small>See why Teko loves our visits, set up a Meet & Greet now!</small>
+                    <a href="letsmeet.html" class="bttn-float bttn-lg bttn-jumbo overlay-bttn">Let's Meet!</a>
+                </div>
+            </div>
+            <div class="col-md gallery-img" style="top: -250px;">
+                <img src="../img/Gallery/15_Boop.jpg" class="gallery__img-img" alt="Older female dog smiling for the camera."/>
+                <div class="gallery__img-overlay" id="gallery__img-overlay-15">
+                    <h3>Mia</h3>
+                    <p>This is Mia! She loves belly rubs, she could soak up the love all day!</p>
+                    <small>See why Mia loves our visits, set up a Meet & Greet now!</small>
+                    <a href="letsmeet.html" class="bttn-float bttn-lg bttn-jumbo overlay-bttn">Let's Meet!</a>
+                </div>
+            </div>
+        </div>
+        <!-- END OF Row 5-->
+
+        <!-- Row 6-->
+        <div class="row gallery_row gallery__row-6">
+            <div class="col-md gallery-img" style="top:-350px;">
+                <img src="../img/Gallery/16_Sassy.jpg" class="gallery__img-img" alt="Small female dog on her side."/>
+                <div class="gallery__img-overlay" id="gallery__img-overlay-16">
+                    <h3>Lucy</h3>
+                    <p>This is Lucy! Lucy loves to go for walks out in the woods.</p>
+                    <small>See why Lucy loves our walks, set up a Meet & Greet now!</small>
+                    <a href="letsmeet.html" class="bttn-float bttn-lg bttn-jumbo overlay-bttn">Let's Meet!</a>
+                </div>
+            </div>
+            <div class="col-md gallery-img" style="top: -750px;">
+                <img src="../img/Gallery/17_Beagle.jpg" class="gallery__img-img" alt="Male Retriever looking at the carmera."/>
+                <div class="gallery__img-overlay" id="gallery__img-overlay-17">
+                    <h3>Luke</h3>
+                    <p style="margin-top: 20px;">This is Teko! Teko is one of six dogs in his family.  All of their high energy helps keep him young!</p>
+                    <small>See why Teko loves our visits, set up a Meet & Greet now!</small>
+                    <a href="letsmeet.html" class="bttn-float bttn-lg bttn-jumbo overlay-bttn">Let's Meet!</a>
+                </div>
+            </div>
+            <div class="col-md gallery-img" style="top: -390px;">
+                <img src="../img/Gallery/18_Porkie.jpg" class="gallery__img-img" alt="Older female dog smiling for the camera."/>
+                <div class="gallery__img-overlay" id="gallery__img-overlay-18">
+                    <h3>Mia</h3>
+                    <p>This is Mia! She loves belly rubs, she could soak up the love all day!</p>
+                    <small>See why Mia loves our visits, set up a Meet & Greet now!</small>
+                    <a href="letsmeet.html" class="bttn-float bttn-lg bttn-jumbo overlay-bttn">Let's Meet!</a>
+                </div>
+            </div>
+        </div>
+        <!-- END OF Row 6-->
+
+        <!-- Row 7-->
+        <div class="row gallery_row gallery__row-7">
+            <div class="col-md gallery-img" style="top:-480px;">
+                <img src="../img/Gallery/19_Samson-Fritzy-and-Baby-Bear.jpg" class="gallery__img-img" alt="Small female dog on her side."/>
+                <div class="gallery__img-overlay" id="gallery__img-overlay-19">
+                    <h3>Lucy</h3>
+                    <p>This is Lucy! Lucy loves to go for walks out in the woods.</p>
+                    <small>See why Lucy loves our walks, set up a Meet & Greet now!</small>
+                    <a href="letsmeet.html" class="bttn-float bttn-lg bttn-jumbo overlay-bttn">Let's Meet!</a>
+                </div>
+            </div>
+            <div class="col-md gallery-img" style="top: -750px;">
+                <img src="../img/Gallery/20_Lucy-woods.jpg" class="gallery__img-img" alt="Male Retriever looking at the carmera."/>
+                <div class="gallery__img-overlay" id="gallery__img-overlay-20">
+                    <h3>Luke</h3>
+                    <p style="margin-top: 20px;">This is Teko! Teko is one of six dogs in his family.  All of their high energy helps keep him young!</p>
+                    <small>See why Teko loves our visits, set up a Meet & Greet now!</small>
+                    <a href="letsmeet.html" class="bttn-float bttn-lg bttn-jumbo overlay-bttn">Let's Meet!</a>
+                </div>
+            </div>
+            <div class="col-md gallery-img" style="top: -405px;">
+                <img src="../img/Gallery/21_Scotty.jpg" class="gallery__img-img" alt="Older female dog smiling for the camera."/>
+                <div class="gallery__img-overlay" id="gallery__img-overlay-21">
+                    <h3>Mia</h3>
+                    <p>This is Mia! She loves belly rubs, she could soak up the love all day!</p>
+                    <small>See why Mia loves our visits, set up a Meet & Greet now!</small>
+                    <a href="letsmeet.html" class="bttn-float bttn-lg bttn-jumbo overlay-bttn">Let's Meet!</a>
+                </div>
+            </div>
+        </div>
+        <!-- END OF Row 7-->
+
+        <!-- Row 8-->
+        <div class="row gallery_row gallery__row-8">
+            <div class="col-md gallery-img" style="top:-630px;">
+                <img src="../img/Gallery/22_CLyde.jpg" class="gallery__img-img" alt="Small female dog on her side."/>
+                <div class="gallery__img-overlay" id="gallery__img-overlay-22">
+                    <h3>Lucy</h3>
+                    <p>This is Lucy! Lucy loves to go for walks out in the woods.</p>
+                    <small>See why Lucy loves our walks, set up a Meet & Greet now!</small>
+                    <a href="letsmeet.html" class="bttn-float bttn-lg bttn-jumbo overlay-bttn">Let's Meet!</a>
+                </div>
+            </div>
+            <div class="col-md gallery-img" style="top: -800px;">
+                <img src="../img/Gallery/23_Bella-bed.jpg" class="gallery__img-img" alt="Male Retriever looking at the carmera."/>
+                <div class="gallery__img-overlay" id="gallery__img-overlay-23">
+                    <h3>Luke</h3>
+                    <p style="margin-top: 20px;">This is Teko! Teko is one of six dogs in his family.  All of their high energy helps keep him young!</p>
+                    <small>See why Teko loves our visits, set up a Meet & Greet now!</small>
+                    <a href="letsmeet.html" class="bttn-float bttn-lg bttn-jumbo overlay-bttn">Let's Meet!</a>
+                </div>
+            </div>
+            <div class="col-md gallery-img" style="top: -400px;">
+                <img src="../img/Gallery/24_Cookie-and-Little-Bear.jpg" class="gallery__img-img" alt="Older female dog smiling for the camera."/>
+                <div class="gallery__img-overlay" id="gallery__img-overlay-24">
+                    <h3>Mia</h3>
+                    <p>This is Mia! She loves belly rubs, she could soak up the love all day!</p>
+                    <small>See why Mia loves our visits, set up a Meet & Greet now!</small>
+                    <a href="letsmeet.html" class="bttn-float bttn-lg bttn-jumbo overlay-bttn">Let's Meet!</a>
+                </div>
+            </div>
+        </div>
+        <!-- END OF Row 8-->
+
+        <!-- Row 9-->
+        <div class="row gallery_row gallery__row-9">
+            <div class="col-md gallery-img" style="top:-620px;">
+                <img src="../img/Gallery/25_Mandie.jpg" class="gallery__img-img" alt="Small female dog on her side."/>
+                <div class="gallery__img-overlay" id="gallery__img-overlay-25">
+                    <h3>Lucy</h3>
+                    <p>This is Lucy! Lucy loves to go for walks out in the woods.</p>
+                    <small>See why Lucy loves our walks, set up a Meet & Greet now!</small>
+                    <a href="letsmeet.html" class="bttn-float bttn-lg bttn-jumbo overlay-bttn">Let's Meet!</a>
+                </div>
+            </div>
+            <div class="col-md gallery-img" style="top: -805px;">
+                <img src="../img/Gallery/26_Luke-and-Sophie.jpg" class="gallery__img-img" alt="Male Retriever looking at the carmera."/>
+                <div class="gallery__img-overlay" id="gallery__img-overlay-26">
+                    <h3>Luke</h3>
+                    <p style="margin-top: 20px;">This is Teko! Teko is one of six dogs in his family.  All of their high energy helps keep him young!</p>
+                    <small>See why Teko loves our visits, set up a Meet & Greet now!</small>
+                    <a href="letsmeet.html" class="bttn-float bttn-lg bttn-jumbo overlay-bttn">Let's Meet!</a>
+                </div>
+            </div>
+            <div class="col-md gallery-img" style="top: -420px;">
+                <img src="../img/Gallery/27_Tucker.jpg" class="gallery__img-img" alt="Older female dog smiling for the camera."/>
+                <div class="gallery__img-overlay" id="gallery__img-overlay-27">
+                    <h3>Mia</h3>
+                    <p>This is Mia! She loves belly rubs, she could soak up the love all day!</p>
+                    <small>See why Mia loves our visits, set up a Meet & Greet now!</small>
+                    <a href="letsmeet.html" class="bttn-float bttn-lg bttn-jumbo overlay-bttn">Let's Meet!</a>
+                </div>
+            </div>
+        </div>
+        <!-- END OF Row 9-->
+
+        <!-- Row 9-->
+        <div class="row gallery_row gallery__row-10">
+            <div class="col-md gallery-img" style="top:250px;">
+                <img src="../img/Gallery/28_Maverick.jpg" class="gallery__img-img" alt="Small female dog on her side."/>
+                <div class="gallery__img-overlay" id="gallery__img-overlay-28">
+                    <h3>Lucy</h3>
+                    <p>This is Lucy! Lucy loves to go for walks out in the woods.</p>
+                    <small>See why Lucy loves our walks, set up a Meet & Greet now!</small>
+                    <a href="letsmeet.html" class="bttn-float bttn-lg bttn-jumbo overlay-bttn">Let's Meet!</a>
+                </div>
+            </div>
+            <div class="col-md gallery-img" style="top: -15px;">
+                <img src="../img/Gallery/29_Velvet.jpg" class="gallery__img-img" alt="Male Retriever looking at the carmera."/>
+                <div class="gallery__img-overlay" id="gallery__img-overlay-29">
+                    <h3>Luke</h3>
+                    <p style="margin-top: 20px;">This is Teko! Teko is one of six dogs in his family.  All of their high energy helps keep him young!</p>
+                    <small>See why Teko loves our visits, set up a Meet & Greet now!</small>
+                    <a href="letsmeet.html" class="bttn-float bttn-lg bttn-jumbo overlay-bttn">Let's Meet!</a>
+                </div>
+            </div>
+            <div class="col-md">
+                <!--EMPTY ON PURPOSE-->
+            </div>
+        </div>
+        <!-- END OF Row 9-->
+
+        <!-- Row 9-->
+        <div class="row gallery_row gallery__row-11">
+            <div class="col-md gallery-img" style="top:-50px;">
+                <img src="../img/Gallery/31_Ducks.jpg" class="gallery__img-img" alt="Small female dog on her side."/>
+                <div class="gallery__img-overlay" id="gallery__img-overlay-31">
+                    <h3>Lucy</h3>
+                    <p>This is Lucy! Lucy loves to go for walks out in the woods.</p>
+                    <small>See why Lucy loves our walks, set up a Meet & Greet now!</small>
+                    <br>
+                    <a href="letsmeet.html" class="bttn-float bttn-lg bttn-jumbo overlay-bttn">Let's Meet!</a>
+                </div>
+            </div>
+        </div>
+        <!-- END OF Row 9-->
+        </div>
+        <!-- END OF Gallery-->
+
+         <!-- Call To Action Div-->
+         <div class="container-fluid call-to-action__container">
+            <div class="call-to-action__h3 d-flex justify-content-center">
+                <h3> Are your friends ready to join the Happy Tales Pack?</h3>
+            </div>
+            <div class="call-to-action__a d-flex justify-content-center">
+                <a href="servicesandrates.html" class="bttn-float bttn-lg bttn-jumbo">Set up a Meet & Greet!</a>
+            </div>
+        </div>
+        <!--END OF Call To Action Div-->
+
+        <!-- Footer -->
+         <footer class="page-footer font-small blue pt-4" style="margin-top: 0;">
+            <!-- Footer Links -->
+            <div class="container-fluid text-center text-md-left">
+                <div class="row">
+                    <div class="col-md-4 mt-md-0 mt-3">
+                        <h5 class="text-uppercase font-weight-bold">Contact</h5>
+                        <i class="fas fa-phone"></i> <p class="footer-text footer-contact-text">(989)217-6097</p><br/>
+                        <i class="fas fa-envelope"></i> <p class="footer-text footer-contact-text">happytalespetcare@gmail.com</p>
+                        <br/><br/>
+                        <p class="footer-text" style="margin-bottom:1rem;">Servicing West Branch, Saint Helen & Rose City</p>
+                        <p class="footer-text">Out of service area? Contact us today to figure</p>
+                        <p class="footer-text">something out!</p>
+                    </div>
+                    <div class="col-md-4 mt-md-0 mt-3">
+                        <h5 class="text-uppercase font-weight-bold">Office Hours</h5>
+                        <p class="footer-text">Monday:    8:00 AM - 8:00 PM</p>
+                        <p class="footer-text">Tusday:    8:00 AM - 8:00 PM</p>
+                        <p class="footer-text">Wednesday: 8:00 AM - 8:00 PM</p>
+                        <p class="footer-text">Thursday:  8:00 AM - 8:00 PM</p>
+                        <p class="footer-text">Friday:    8:00 AM - 8:00 PM</p>
+                        <p class="footer-text">Saturday:  9:00 AM - 4:00 PM</p>
+                        <p class="footer-text">Sunday:   12:00 PM - 4:00 PM</p>
+                    </div>
+                    <div class="col-md-4 mt-md-0 mt-3">
+                        <h5 class="text-uppercase font-weight-bold">Let's Connect!</h5>
+                        <p class="footer-text"> Follow us on Facebook and Instagram</p>
+                        <p class="footer-text"> for all of the latest Happy Tales news!</p>
+                        <div>
+                            <i class="fab fa-facebook-f fa-2x social-icon-fb"></i>
+                            <i class="fab fa-instagram fa-2x social-icon-insta"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="footer-break"/>
+            <div class="footer-copyright text-center py-3">© 2020 Copyright:
+                <a href="https://deadhead.media" style="color: var(--mainBlue);"> DeadHead.Media</a>
+            </div>
+        </footer>
+        <!--END OF Footer -->
+
+        <script src="../js/gallery.js"></script>
+    </body>
+</html>

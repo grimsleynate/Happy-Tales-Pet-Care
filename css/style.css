@@ -611,31 +611,8 @@ footer i {
   line-height: 1em;
 }
 
-#gallery-left, #gallery-right {
-	width: 49%;
-	display:inline-block;
-	height: 820px;
-}
-
-#gallery-left {
-	transform: translate(0, -85px);
-	margin-left: 1%;
-}
-
 .gallery-img {
-	max-width: 100%;
-	width: 90%;
-	border-radius: 20px;
-	box-shadow: 10px 10px 5px #333;
-}
-
-.gallery-top-right, .gallery-top-left {
-	margin-bottom: 60px;
-}
-
-.gallery-top-left {
-	margin-top: 0;
-	padding-top: 0;
+	margin: 15px 0;
 }
 
 .bttn-default {
@@ -717,7 +694,7 @@ footer i {
 }
 .bttn-float:hover,
 .bttn-float:focus {
-  box-shadow: 0 30px 30px rgba(0,0,0,0.16);
+	box-shadow: 0 30px 30px rgba(0,0,0,0.16);
   -webkit-transform: translateY(-10px);
 		  transform: translateY(-10px);
   -webkit-transition: all 0.2s cubic-bezier(0.02, 0.01, 0.47, 1), -webkit-transform 0.2s cubic-bezier(0.02, 0.01, 0.47, 1);
