@@ -1,0 +1,30 @@
+#contact {
+	width:100%;
+	align-content: center;
+	position: relative;
+	margin-top: 200px;
+	bottom: 150px;
+
+}
+
+.contact-title {
+	color:var(--mainBlue2);
+	margin-top:80px;
+	padding-bottom:0;
+}
+
+.contact-text {
+	text-align: center;
+	width: 55%;
+	color:var(--mainGray);
+	position: relative;
+	left:50%;
+	transform:translate(-50%, 0%);
+	font-size:22px;
+}
+
+.bttn-contact {
+	position:relative;
+	margin-top:2%;
+	font-size:2vw;
+}

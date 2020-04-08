@@ -1,4 +1,3 @@
-//sets up a function to be run
 $(function () {
     $(document).scroll(function () {
         //defines $nav as the css class bg-light
@@ -12,4 +11,6 @@ $(function () {
         $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
         $navLink.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
         $navBrand.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
-    }});
+    });
+  });
+  

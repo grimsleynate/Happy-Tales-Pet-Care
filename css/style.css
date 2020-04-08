@@ -1,8 +1,3 @@
-/* * {
-	border: 1px dotted black;
-}
-*/
-
 /* This sets variables to be used throughout the css. */
 :root {
 	--darkGray:#404040;
@@ -21,6 +16,8 @@ body {
 	z-index:-50;
 	font-family: 'Lato', sans-serif;
 	font-size: 16px;
+	background-image: url('img/circles-light.png');
+	color: #404040;
 }
 
 h4 {
@@ -36,11 +33,8 @@ p {
 .navbar-light .nav-item:focus .nav-link,
 .navbar-light .nav-item:hover .nav-link,
 .navbar .navbar-brand {
-	/*This changes the color of the link text when you scroll over it. */
 	color:var(--mainPurple);
 	transition: color 200ms linear;
-	/* This increases the font size when you scroll
-	   over a link */
 	font-size: 24px;
 }
 
@@ -55,6 +49,7 @@ p {
 .navbar .navbar-brand.scrolled {
 	font-size: 22px;
 }
+
 .bg-transparent {
 	background-color: transparent;
 }
@@ -88,66 +83,14 @@ and has hovered over the text */
 	transition: color 600ms linear, font-size 600ms linear;
 }
 
-/* This allows the jumbotron image, content break, and book now button to
-be positioned wherever I need, and ensures that the content stays behind
-all other content. */
-#jumbotron-image-container {
-	position: absolute;
-	width: 100%;
-	top:0;
-}
-
-#jumbotron-image {
-	position: relative;
-}
-/*This darkens the jumbotron dog image, lowers the opacity, and makes sure
-the width is the full width of the page */
-.jumbotron-image {
-	width: auto;
-	height: 750px;
-	filter:opacity(90%) contrast(90%);
-	z-index: -10;
-}
-
-/*This is for header texts associated with jumbotrons. */
-.jumbotron-text {
-	padding-top: 250px;
-	color: white;
-	font-family: "Signika", cursive;
-	font-weight: 700;
-	font-size: 5vw;
-	text-transform: uppercase;
-}
-
-/*This styles all of the text within the jumbotron */
-#jumbotron-text-container {
-	text-align: center;
-	padding-left: 20%;
-	padding-right: 20%;
-	position: relative;
-}
-
-/*This styles the paw and line image between the text on the jumbotron */
-#jumbotron-decoration {
-		margin-top: 75px;
-		color: white;
-}
-
-/*This styles any non-title text associated with a jumbotron. */
-.jumbotron-subtitle {
-	color: white;
-	padding-top: 20px;
-	font-size: var(--mediumFont);
-	font-weight: 600;
-	font-family: 'Lato', sans-serif;
-	padding-left:10%;
-	padding-right:10%;
-	/*text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
-	*/
-}
-
 a {
 	color: var(--mainBlue);
+}
+
+a.bttn-float:hover {
+	color: white;
+	text-decoration: none;
+	cursor: pointer;
 }
 
 /*This styles the background for the card titles on each page */
@@ -158,24 +101,16 @@ a {
 	border-radius: 15px;
 }
 
-.jumbotron-subtext {
-	color: white;
-	padding-top: 20px;
-	font-size: var(--smallFont);
-	font-weight: 500;
-	padding-left:10%;
-	padding-right:10%;
-	font-family: 'Lato', sans-serif;
-	padding-left: 20%;
-	padding-right: 20%;
-}
-
 /*This styles any content breaks created. */
 hr {
 	margin-top: -5px;
 	border: 3px solid black;
 	width: 100%;
 	position: absolute;
+}
+
+i {
+	color:purple;
 }
 
 /*This class centers content horizontally */
@@ -187,69 +122,11 @@ hr {
 
 .card {
 	position: absolute;
-  width: 65%;
+  	width: 65%;
 	display: table;
 	margin: 100px auto;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
 }
-
-.carousel-control-prev {
-	left: -13%;
-}
-
-.carousel-control-next {
-	right: -13%;
-}
-
-.card-half {
-	display:inline-block;
-	width: 50%;
-}
-
-.card-right {
-	float: right;
-}
-
-.card-text {
-	text-align:center;
-}
-
-.title {
-	font-family: 'Signika', sans-serif;
-	font-weight: 700;
-	font-size: var(--largeFont);
-	color: var(--mainBlue);
-	text-transform: uppercase;
-}
-
-.card-title {
-	font-family: 'Lato', sans-serif;
-	font-weight: 400;
-	font-size: 44px;
-	color: var(--mainBlue);
-	text-transform: uppercase;
-	text-align:center;
-	margin-bottom: 0;
-	padding: 20px 0;
-}
-
-.card-image {
-	max-width: 100%;
-	position: relative;
-}
-
-a.bttn-float:hover {
-	color: white;
-	text-decoration: none;
-	cursor: pointer;
-}
-
-body {
-	background-image: url('img/circles-light.png');
-	color: #404040;
-}
-
 
 .scrolled-image {
 	background-image:url('img/parallax-img.jpg');
@@ -271,165 +148,11 @@ body {
 
 .intro-parallax-img {
 	background-image:url('img/parallax-img.jpg');
-
 	height: 500px;
 	width: 100%;
-	
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-}
-
-#parallax-text {
-	padding-top:400%;
-}
-
-#parallax {
-	padding-top:185px;
-}
-
-.card-main-text {
-	padding-top: 4%;
-	padding-left:10%;
-	padding-right: 10%;
-	color:var(--mainGray);
-	font-family:'Lato',
-	sans-serif;
-	font-size: 1.15vw;
-}
-
-.parallax-text {
-	font-size: 22px;
-	color: white;
-	text-align: center;
-	padding-top:0%;
-	padding-left:25%;
-	padding-right:25%;
-}
-
-#why-choose {
-	width: 100%;
-	padding-top:175px;
-	position: relative;
-	margin: 0 auto;
-}
-
-.why-choose-row {
-	display:inline-block;
-	width: 100%;
-}
-
-.why-choose-col {
-	display:inline-block;
-  text-align: center;
-}
-
-i {
-	color:purple;
-}
-
-.about-us-img {
-	padding-top: 3vw;
-	height: auto;
-	width: 5vw;
-}
-
-.about-us-hr {
-	width:50%;
-	position: relative;
-	margin: 0 auto;
-	border: 1px solid rgb(225, 225, 225);
-}
-
-.parallax-hr-left {
-	border-color: var(--mainPurple);
-	right: 50%;
-}
-
-.parallax-hr-right {
-	border-color: var(--mainBlue);
-	left: 50.18%;
-	width:49.5%;
-}
-
-.services-icon {
-	position:relative;
-	left:50%;
-	transform:translate(-50%, 0%);
-}
-
-.icon-title {
-	font-family: 'Signika', sans-serif;
-	font-weight: 700;
-	font-size: 28px;
-	color: var(--darkGray);
-	text-transform: uppercase;
-	text-align: center;
-	margin-top: 35px;
-}
-
-.why-choose-text {
-	 font-family:'Lato', sans-serif;
-	 color:var(--mainGray);
-	 padding-left:20%;
-	 padding-right:20%;
-	 padding-top:10%;
-	 text-align:center;
-}
-
-#testimonials {
-	margin-top: 5%;
-	display: block;
-}
-
-#testimonials-mobile {
-	display: none;
-}
-
-.card-up {
-	border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
-	box-sizing:border-box;
-	height: 180px;
-}
-
-.info-color {
-	background-color: var(--mainPurple);
-}
-
-.indigo {
-	background-color: var(--mainBlue);
-}
-
-.blue-gradient {
-	background: linear-gradient(40deg,var(--mainPurple),var(--mainBlue));
-}
-
-.avatar {
-	border-radius: 50%;
-	width: 180px;
-	margin-top: -90px;
-	overflow:hidden;
-	border: 5px solid #fff;
-}
-
-.white {
-	background-color: #fff !important;
-}
-
-.rounded-circle {
-	border-radius: 50% !important;
-}
-
-.testimonial-hr {
-	margin-top: 1rem;
-	margin-bottom: 1rem;
-	border: 0;
-	border-top: 1px solid rgba(0,0,0,.1);
-	box-sizing:content-box;
-	height: 0;
-	overflow: visible;
-	position:relative;
 }
 
 .mt-4 {
@@ -443,105 +166,6 @@ i {
 .card-body p{
 	margin-bottom: 1rem;
 	line-height: 24px;
-}
-
-.carousel-multi-item {
-		margin-bottom: 5rem;
-		width: 80%;
-		left: 10%;
-}
-
-.carousel-multi-item .col-lg-4 {
-	float: left;
-	width: 33.3333333%;
-	max-width: 100%;
-}
-
-.carousel-indicators li {
-	background-color: var(--mainPurple);
-}
-
-.carousel-item .card {
-	position: relative;
-	width: 90%;
-}
-
-.carousel li {
-	left: 50%;
-	transform: translate(-50%, 300%);
-}
-
-#carousel-title {
-	padding: 0;
-	padding-bottom: 49px;
-	padding-top: 5rem;
-}
-
-.gallery-bg {
-	width:80%;
-	margin: 0 auto;
-	background-image:url('img/gallery-parallax.jpg');
-	background-repeat: repeat;
-	height: 1200px;
-}
-
-.gallery-title {
-	color:var(--mainBlue);
-	padding-bottom:96px;
-	padding-top:2.5%;
-	margin-bottom:0px;
-	position: relative;
-	top: -115px;
-}
-
-.learn-more-button {
-	font-size:1rem;
-}
-
-#gallery {
-	display: inline-block;
-	margin-top:148px;
-}
-
-.center-img {
-	position: relative;
-	left:50%;
-	transform:translate(-50%, 0%);
-}
-
-.blue {
-	background-color: white !important;
-}
-
-#contact {
-	width:100%;
-	align-content: center;
-	position: relative;
-	margin-top: 200px;
-	bottom: 150px;
-
-}
-
-.contact-title {
-	color:var(--mainBlue2);
-	margin-top:80px;
-	padding-bottom:0;
-}
-
-.contact-text {
-	text-align: center;
-	width: 55%;
-	color:var(--mainGray);
-	position: relative;
-	left:50%;
-	transform:translate(-50%, 0%);
-	font-size:22px;
-}
-
-.bttn-contact {
-	position:relative;
-	margin-top:2%;
-	font-size:2vw;
 }
 
 .footer-contact-text {
@@ -564,20 +188,6 @@ footer.page-footer .footer-copyright {
 	border-style: none;
 	border-bottom: 1px solid var(--lightGray);
 	margin-top: 10px;
-}
-
-#more-photos {
-	text-decoration: none;
-	position: absolute;
-	transform:translate(-50%, 1900%);
-	left: 50%;
-	font-size: 2rem;
-	color: white;
-	font-weight: 600;
-}
-
-#more-photos:hover {
-	color:var(--mainPurple);
 }
 
 .col-md-6 {
@@ -609,10 +219,6 @@ footer i {
   transform-origin: 50% 100%;
   display: inline-block;
   line-height: 1em;
-}
-
-.gallery-img {
-	margin: 15px 0;
 }
 
 .bttn-default {
@@ -812,99 +418,12 @@ footer i {
     box-shadow: 0 30px 30px rgba(0,0,0,0.5);
 }
 
-#about-us {
-	background: white;
-	transform: translate(0, 60%);
-	position: relative;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    width: 65%;
-	margin: 0 auto;
-	display: table;
-	top: -275px;
-}
-
 .fa-bars {
 	color: var(--mainPurple);
 }
 
 .font-medium {
 	font-size: 2vw;
-}
-
-#services {
-	display:inline-block;
-	width:100%;
-	margin-top:100px;
-	padding-top: 125px;
-}
-
-.services-column {
-	display: flex;
-	flex-wrap: wrap;
-	flex-flow: row wrap;
-	position: relative;
-	width: 100%;
-}
-
-#dog-walking {
-	width: 33.33333%;
-}
-
-#pet-sitting {
-	width: 33.33333%;
-}
-
-#other-services {
-	width: 33.33333%;
-}
-
-#services-title {
-		padding-bottom:80px;
-}
-
-.parallax-title {
-	color:white;
-	padding-bottom:77px;
-}
-
-.parallax-hr {
-	transform:translate(-50%, -27.5px);
-	border: 1px solid var(--lightGray);
-	width:20%;
-	left:50%;
-}
-
-.why-choose-title {
-	color:var(--mainBlue);
-	padding-bottom: 80px;
-	padding-top:0;
-}
-
-.why-choose-hr {
-	border: 1px solid var(--lightGray);
-	position: relative;
-	width:25%;
-	transform:translate(0, 30px);
-}
-
-.mart5 {
-	margin-top: 5%;
-}
-
-.services-title {
-	font-size:32px;
-	color:var(--darkGray);
-	text-align:center;
-	padding-top:5%;
-}
-
-.services-text {
-	font-family:'Lato', sans-serif;
-	color:var(--mainGray);
-	padding-left:15%;
-	padding-right:15%;
-	padding-top:5%;
-	text-align:center;
 }
 
 .social-icon-fb {
@@ -916,16 +435,6 @@ footer i {
 	margin-left: 70px;
 }
 
-@media screen and (max-width: 1660px) {
-	#about-us {
-		top: -175px;
-	}
-
-	#services {
-		padding-top: 350px;
-	}
-}
-
 .bttn-services {
 	position:relative !important;
 	left:38% !important;
@@ -934,326 +443,13 @@ footer i {
 	font-size: 24px !important;
 }
 
-@media screen and (max-width: 1330px) {
-	#about-us {
-		top: -100px;
-		width: 85%;
-	}
-
-	.font-medium {
-		font-size: 2.5vw;
-	}
-
-	.card-main-text {
-		font-size: 1.4vw;
-	}
-}
-
-@media screen and (max-width: 1040px) {
-	#dog-walking, #pet-sitting, #other-services {
-		width: 100%;
-	}
-
-	#pet-sitting, #other-services {
-		margin-top: 30px;
-	}
-
-	.services-title {
-		font-size:32px;
-		color:var(--darkGray);
-		text-align:center;
-		padding-top:20px;
-	}
-
-	.services-text {
-		font-family:'Lato', sans-serif;
-		color:var(--mainGray);
-		padding-left:25%;
-		padding-right:25%;
-		padding-top:0;
-		text-align:center;
-	}
-
-	.bttn-services {
-		position:relative !important;
-		left:50% !important;
-		transform:translate(-50%, 0%) !important;
-		margin-left: 0px !important;
-		margin-top:5% !important;
-		font-size: 24px !important;
-	}
-}
-
-@media only screen and (max-width: 768px) {
-
-}
-
 @media only screen and (max-width: 414px) {
-	.jumbotron-image {
-		height: 550px;
-	}
-
-	#jumbotron-text-container {
-		top: 85px;
-	}
-
-	.jumbotron-text {
-		font-size: 28px;
-	}
-
-	.jumbotron-subtext{
-		font-size: 14px;
-		padding-left:0;
-		padding-right:0;
-	}
-
-	.jumbotron-subtitle {
-		font-size: 16px;
-	}
-
-	.bttn-float.bttn-lg {
-		font-size: 24px;
-		bottom: 10px;
-	}
-
-	#about-us {
-		margin-top: 100px;
-		width: 90%;
-	}
-
-	.card-half {
-		display: block;
-		width: 100%;
-	}
-
-	.about-us-img {
-		padding-top: 3vw;
-		height: auto;
-		width: 38px;
-		display: none;
-	}
-
-	.font-medium {
-		font-size: 24px;
-	}
-
-	.card-main-text {
-		font-size: 14px;
-	}
-
-	#services {
-		padding-top: 240px;
-	}
-
-	#services-title {
-		padding-bottom: 20px;
-	}
-
-	.services-text {
-		font-size: 14px;
-		padding: 0 12.5%;
-	}
-
-	#dog-walking, #pet-sitting {
-		padding-bottom: 40px;
-	}
-
-	.card-title{
-		font-size: 32px;
-	}
-
-	.parallax-text {
-		padding: 0 10%;
-		font-size: 18px;
-	}
-
-	.parallax-title{
-		color: white;
-	}
-
-	.why-choose-col {
-		width: 50%;
-		padding-top: 50px;
-	}
-
-	.icon-title {
-		font-size:24px;
-	}
-	
-
-	.why-choose-title {
-		padding-bottom: 30px;
-	}
-
-	.why-choose-hr {
-		width: 60%;
-	}
-
-	.why-choose-text {
-		font-size: 14px;
-		padding-left: 0;
-		padding-right: 0;
-		margin-top: 30px;
-	}
-
-	.in-home-col {
-		margin-top: 5%;
-	}
-
 	#testimonials {
 		display: none;
 	}
 
 	#testimonials-mobile {
 		display: block;
-	}
-
-	#carousel-title-mobile {
-		padding: 0;
-		padding-bottom: 49px;
-		padding-top: 5rem;
-	}
-
-	#testimonials-mobile {
 		margin-top: 5%;
-	}
-
-	.card {
-		width: 90%;
-		margin-left: 5%;
-		margin-right: 5%;
-		margin-bottom: 0;
-	}
-
-	#gallery {
-		margin-top: 48px;
-	}
-
-	.carousel-control-prev-icon,
-	.carousel-control-next-icon {
-  	height: 100px;
-  	width: 100px;
-  	background-size: 100%, 100%;
-		background-image: none;
-		position: relative;
-		top: -18px;
-	}
-
-	.carousel-control-prev-icon {
-		margin-left: 30%;
-	}
-
-	.carousel-control-next-icon {
-		margin-right: 30%;
-	}
-
-	.carousel-control-next-icon:after
-	{
-		content: '>';
-		font-size: 55px;
-		color: #800080;
-	}
-
-	.carousel-control-prev-icon:after {
-		content: '<';
-		font-size: 55px;
-		color: #800080;
-	}
-
-	#gallery-left, #gallery-right {
-		width: 100%;
-		height: 440px;
-	}
-
-	.gallery-img {
-		width: 90%;
-		left: 49%;
-	}
-
-	.contact-title {
-		font-size: 26px;
-		margin-top: 0;
-	}
-
-	.contact-text {
-		font-size: 16px;
-		width: 80%;
-	}
-
-	.social-icon-fb, .social-icon-insta {
-		margin: 0;
-		margin-top: 25px;
-		margin-bottom: 20px;
-	}
-
-	.social-icon-fb {
-		margin-right: 5%;
-	}
-
-	.social-icon-insta {
-		margin-left: 5%;
-	}
-
-	#more-photos {
-		transform: translate(-50%, 500px);
-		text-align: center;
-
-	}
-
-	footer {
-		margin-top: -20px;
-	}
-
-	#carousel-title-mobile {
-		margin-bottom: 0;
-	}
-
-	.carousel-inner {
-		top: -80px;
-	}
-
-	#more-photos {
-		font-size: 30px;
-	}
-
-	.card .card-body a{
-		font-size: 20px;
-	}
-
-	#services-title{
-		padding-bottom: 80px;
-		position: relative;
-		top: 30px;
-		font-size: 36px;
-	}
-
-	#contact {
-		padding-top: 240px;
-	}
-
-	.contact-text {
-		font-size: 18px;
-		width: 90%;
-	}
-
-	#carouselSlides {
-		height: 475px;
-	}
-}
-
-@media only screen and (max-width: 360px) {
-	#jumbotron-text-container {
-		top: 0;
-	}
-
-	.bttn-float.bttn-lg {
-		bottom: 0;
-		margin-top:-16px;
-		margin-left:30%;
-	}
-
-	#about-us {
-		margin-top: 0;
-		top: -200px;
 	}
 }
