@@ -299,8 +299,7 @@ footer i {
   transition: all 0.3s cubic-bezier(0.02, 0.01, 0.47, 1);
   transition: all 0.3s cubic-bezier(0.02, 0.01, 0.47, 1), -webkit-transform 0.3s cubic-bezier(0.02, 0.01, 0.47, 1);
 }
-.bttn-float:hover,
-.bttn-float:focus {
+.bttn-float:hover {
 	box-shadow: 0 30px 30px rgba(0,0,0,0.16);
   -webkit-transform: translateY(-10px);
 		  transform: translateY(-10px);
@@ -314,8 +313,7 @@ footer i {
   font-size: 12px;
   font-family: inherit;
 }
-.bttn-float.bttn-xs:hover,
-.bttn-float.bttn-xs:focus {
+.bttn-float.bttn-xs:hover {
   -webkit-transform: translateY(-6px);
           transform: translateY(-6px);
 }
@@ -324,8 +322,7 @@ footer i {
   font-size: 16px;
   font-family: inherit;
 }
-.bttn-float.bttn-sm:hover,
-.bttn-float.bttn-sm:focus {
+.bttn-float.bttn-sm:hover {
   -webkit-transform: translateY(-8px);
           transform: translateY(-8px);
 }
@@ -334,8 +331,7 @@ footer i {
   font-family: inherit;
   padding: 5px 12px;
 }
-.bttn-float.bttn-md:hover,
-.bttn-float.bttn-md:focus {
+.bttn-float.bttn-md:hover {
   -webkit-transform: translateY(-10px);
           transform: translateY(-10px);
 }
@@ -347,8 +343,7 @@ footer i {
 	margin-left: 45.5%;
 	margin-top: -24px;
 }
-.bttn-float.bttn-lg:hover,
-.bttn-float.bttn-lg:focus {
+.bttn-float.bttn-lg:hover {
 				  box-shadow: 0 30px 30px rgba(0,0,0,0.16);
 				  -webkit-transform: translateY(-12px);
 				  		  transform: translateY(-12px);

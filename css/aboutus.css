@@ -19,7 +19,7 @@
 }
 
 .card {
-    width: 50%;
+    width: 35%;
     position: relative;
 }
 
@@ -75,10 +75,6 @@
 #testimonials {
 	margin-top: 5%;
 	display: block;
-}
-
-#testimonials-mobile {
-	display: none;
 }
 
 .card-up {
@@ -141,6 +137,7 @@ max-width: 100%;
 
 .carousel-indicators li {
 background-color: var(--mainPurple);
+z-index: 10;
 }
 
 .carousel-item .card {

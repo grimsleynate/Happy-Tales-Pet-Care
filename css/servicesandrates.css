@@ -11,6 +11,10 @@
     border-left: 2px solid var(--mainBlue);
 }
 
+.intro-text__subtitle-p a {
+    font-weight: bolder;
+}
+
 .intro-text__quote-p .accent {
     color: #303030;
     font-size: 20px;
