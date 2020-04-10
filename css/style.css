@@ -176,6 +176,7 @@ i {
 footer {
 	color: var(--mainPurple);
 	margin-top:130px;
+	background-color: white;
 }
 
 footer.page-footer .footer-copyright {
@@ -441,6 +442,24 @@ footer i {
 	margin-left: 0px !important;
 	margin-top:5% !important;
 	font-size: 24px !important;
+}
+
+.styled-br {
+	width: 30%;
+	margin-left: 35%;
+	margin-top: 20px;
+	border-bottom: 1px solid #888;
+}
+
+.card-title {
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+	font-size: 44px;
+	color: var(--mainBlue);
+	text-transform: uppercase;
+	text-align:center;
+	margin-bottom: 0;
+	padding: 20px 20px;
 }
 
 @media only screen and (max-width: 414px) {

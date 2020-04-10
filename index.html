@@ -1,131 +1,392 @@
 ﻿﻿<!DOCTYPE html>
 <html lang="en">
 
-<head>
-	<!-- Meta Tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--Is this a change?-->
+    <head>
+        <!-- Meta Tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<!-- Site Title -->
-    <title>Happy Tales | Home</title>
-	<!-- These are the links to custome fonts (Signika, Dancing Script, and Courgette),
+        <!-- Site Title-->
+        <title>Happy Tales</title> 
+
+        <!-- These are the links to custome fonts (Signika, Dancing Script, and Courgette),
 		 Bootstrap CSS, Font Awesome Icons, and custom css in that order. -->
-    <link href="https://fonts.googleapis.com/css?family=Lato|Signika|Dancing+Script|Courgette" rel="stylesheet">
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet">
-	  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-    <link href="css/style.css" rel="stylesheet">
-    <!-- These are the javascript links to jquery, popper, Bootstrap, TweenMax, and custom javascript in that order. -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" async></script>
-    <script defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" async></script>
-    <script defer src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.14.2/TweenMax.min.js"></script>
-    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/ScrollMagic.js"></script>
-    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/animation.gsap.js"></script>
-    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.velocity.min.js" async></script>
-    <script defer src="js/TweenMax.min.js" async></script>
-    
-</head>
+        <link href="https://fonts.googleapis.com/css?family=Lato|Signika|Dancing+Script|Courgette" rel="stylesheet">
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet">
+	      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+        <link href="css/style.css" rel="stylesheet">
+        <link href="css/index.css" rel="stylesheet">
 
-  <body>
-    <!--<div id="fb-root"></div>
-    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2"></script> -->
-		<!--This is the Navbar -->
-		<!-- navbar defines this as a Bootstrap navbar, navbar-expand-lg
-			 makes it collapse into a hamburger icon on smaller screens -->
-		<nav class="navbar fixed-top navbar-expand-lg bg-transparent navbar-light">
-			     <a class="navbar-brand" href="index.html">Happy Tales</a>
-			     <!--This is the code for the toggler. data-target and aria-controls
-				   must be equal to the navigation list's div id. -->
-  			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="color:white;">
-  				<i class="fas fa-bars"></i>
-  			</button>
+        <!-- These are the javascript links to jquery, popper, TweenMax, Bootstrap, and Scroll Magic in that order. -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <script defer src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" async></script>
+        <script defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" async></script>
+        <script defer src="https://kit.fontawesome.com/87ddb7db77.js" crossorigin="anonymous"></script>
+        <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.14.2/TweenMax.min.js"></script>
+        <script defer src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/ScrollMagic.js"></script>
+        <script defer src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/animation.gsap.js"></script>
+        <script defer src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.velocity.min.js" async></script>
+        <script defer src="js/TweenMax.min.js" async></script>
+    </head>
+    <body>
+        <!--This is the Navbar -->
+        <!-- navbar defines this as a Bootstrap navbar, navbar-expand-lg
+            makes it collapse into a hamburger icon on smaller screens -->
+        <nav class="navbar fixed-top navbar-expand-lg bg-transparent navbar-light">
+            <a class="navbar-brand" href="../index.html">Happy Tales</a>
+            <!--This is the code for the toggler. data-target and aria-controls
+                must be equal to the navigation list's div id. -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="color:white;">
+                <i class="fas fa-bars"></i>
+            </button>
 
-  			<!-- This is the start of the navigation list. The div id must
-  				 be equal to the button's data-target and aria-controls. -->
-  			<div class="collapse navbar-collapse" id="navbarSupportedContent">
-  				<!-- ml-auto aligns the content to the right -->
-  				<ul class="navbar-nav ml-auto">
-  					<!-- nav-item is required for each li in this list
-  						 and nav-link is required for each anchor link.
-  						 active styles this item as an active item. -->
-  					<li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-  					<li class="nav-item"><a class="nav-link" href="html/aboutus.html">About</a></li>
-  					<li class="nav-item"><a class="nav-link" href="html/servicesandrates.html">Services & Rates</a></li>
-  					<li class="nav-item"><a class="nav-link" href="#">Let's Meet</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Our Friends</a></li>
-  					<li class="nav-item"><a class="nav-link" href="#">F.A.Q.</a></li>
-  					<li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
-  				</ul>
-		  </nav>
+            <!-- This is the start of the navigation list. The div id must
+                be equal to the button's data-target and aria-controls. -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <!-- ml-auto aligns the content to the right -->
+                <ul class="navbar-nav ml-auto">
+                    <!-- nav-item is required for each li in this list
+                        and nav-link is required for each anchor link.
+                        active styles this item as an active item. -->
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="html/aboutus.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="html/servicesandrates.html">Services & Rates</a></li>
+                    <li class="nav-item"><a class="nav-link" href="html/letsmeet.html">Let's Meet</a></li>
+                    <li class="nav-item"><a class="nav-link" href="html/gallery.html">Our Friends</a></li>
+                    <li class="nav-item"><a class="nav-link" href="html/faq.html">F.A.Q.</a></li>
+                    <li class="nav-item"><a class="nav-link" href="html/contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- END OF Navbar-->
 
-  <section id="contact">
-    <h2 class="card-title contact-title font-weight-light">Is your friend <span style="font-family: 'Courgette', cursive; color: var(--mainBlue);" class="font-weight-bold">ready to join</span> the Happy Tales Pack?</h2>
-    <p class="card-main-text contact-text">
-      Our happy clients come in many shapes, sizes and colors. Let Happy Tales make you and your
-      fur babies happy; we're certain you want regret it! Click here to contact us today!
-    </p>
-    <button class="bttn-lg bttn-float bttn-contact" style="top:60px;">
-      Contact Us
-    </button>
-  </section>
-
-  <!-- Footer -->
-  <footer class="page-footer font-small blue pt-4">
-  <!-- Footer Links -->
-    <div class="container-fluid text-center text-md-left">
-      <!-- Grid row -->
-      <div class="row">
-        <!-- Grid column -->
-        <div class="col-md-4 mt-md-0 mt-3">
-          <!-- Content -->
-          <h5 class="text-uppercase font-weight-bold">Contact</h5>
-          <i class="fas fa-phone"></i> <p class="footer-text footer-contact-text">(989)217-6097</p><br/>
-          <i class="fas fa-envelope"></i> <p class="footer-text footer-contact-text">happytalespetcare@gmail.com</p>
-          <br/><br/>
-          <p class="footer-text" style="margin-bottom:1rem;">Servicing West Branch, Saint Helen & Rose City</p>
-          <p class="footer-text">Out of service area? Contact us today to figure</p>
-          <p class="footer-text">something out!</p>
-        </div>
-        <!-- Grid column -->
-        <div class="col-md-4 mt-md-0 mt-3">
-          <h5 class="text-uppercase font-weight-bold">Office Hours</h5>
-          <p class="footer-text">Monday:    8:00 AM - 8:00 PM</p>
-          <p class="footer-text">Tusday:    8:00 AM - 8:00 PM</p>
-          <p class="footer-text">Wednesday: 8:00 AM - 8:00 PM</p>
-          <p class="footer-text">Thursday:  8:00 AM - 8:00 PM</p>
-          <p class="footer-text">Friday:    8:00 AM - 8:00 PM</p>
-          <p class="footer-text">Saturday:  9:00 AM - 4:00 PM</p>
-          <p class="footer-text">Sunday:   12:00 PM - 4:00 PM</p>
-        </div>
-        <div class="col-md-4 mt-md-0 mt-3">
-          <h5 class="text-uppercase font-weight-bold">Let's Connect!</h5>
-          <p class="footer-text"> Follow us on Facebook and Instagram</p>
-          <p class="footer-text"> for all of the latest Happy Tales news!</p>
-          <div>
-            <i class="fab fa-facebook-f fa-2x social-icon-fb"></i>
-            <i class="fab fa-instagram fa-2x social-icon-insta"></i>
+        <!-- Hero Carousel-->
+        <div id="heroCarousel" class="carousel slide hero-carousel__wrapper" data-ride="carousel" data-interval="10000">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img class="d-block w-100 carousel-item-img" src="img/hero-carousel-1.jpg" alt="First slide">
+              <div class="carousel-caption d-none d-md-block">
+                <div class="hero-carousel__title">
+                  <h1>West Branch's <span class="accent">Premier</span> Pet Care Provider</h1>
+                </div>
+                <div class="hero-carousel__paw-divider">
+                  <img src="img/paw-slider.png" alt=""/>
+                </div>
+                <div class="hero-carousel__subtitle">
+                  <h3>Professional Pet Sitting, Dog Waking, and more in West Branch, Michigan</h3>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100 carousel-item-img" src="img/hero-carousel-2.jpg" alt="Second slide">
+              <div class="carousel-caption d-none d-md-block">
+                <div class="hero-carousel__title">
+                  <h1>West Branch's <span class="accent">Premier</span> Pet Care Provider</h1>
+                </div>
+                <div class="hero-carousel__paw-divider">
+                  <img src="img/paw-slider.png" alt=""/>
+                </div>
+                <div class="hero-carousel__subtitle">
+                  <h3>Professional Pet Sitting, Dog Waking, and more in West Branch, Michigan</h3>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100 carousel-item-img" src="img/hero-carousel-3.jpg" alt="Third slide">
+              <div class="carousel-caption d-none d-md-block">
+                <div class="hero-carousel__title">
+                  <h1>West Branch's <span class="accent">Premier</span> Pet Care Provider</h1>
+                </div>
+                <div class="hero-carousel__paw-divider">
+                  <img src="img/paw-slider.png" alt=""/>
+                </div>
+                <div class="hero-carousel__subtitle">
+                  <h3>Professional Pet Sitting, Dog Waking, and more in West Branch, Michigan</h3>
+                </div>
+              </div>
+            </div>
           </div>
-          <!--
-          <div>
-            <div class="fb-page" data-href="https://www.facebook.com/happytalespetservice" data-tabs="timeline" data-width="500" data-height="400" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/happytalespetservice" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/happytalespetservice">Happy Tales Pet Care</a></blockquote></div>
-          </div>
-          -->
         </div>
+        <div class="d-flex justify-content-center hero-carousel__button">
+          <a href="servicesandrates.html" class="bttn-float bttn-lg bttn-jumbo">Let's Meet!</a>
       </div>
-      <!-- Grid row -->
-    </div>
-    <!-- Footer Links -->
-    <!-- hr break -->
-    <hr class="footer-break"/>
-    <!-- Copyright -->
-    <div class="footer-copyright text-center py-3">© 2019 Copyright:
-      <a href="https://deadhead.media" style="color: var(--mainBlue);"> DeadHead.Media</a>
-    </div>
-    <!-- Copyright -->
-  </footer>
-  <!-- Footer -->
-  <script src="js/main.js"></script>
-  </body>
-</html>
+        <!-- END OF Hero Carousel-->
 
+        <!--Intro Paragraph-->
+        <div class="intro-paragraph">
+          <p><span class="accent-letter">H</span>appy Tales Pet Care is devoted to giving your pets the best care they deserved while under our watch. 
+            Services tailored to your pets needs. We service most of the West Branch, Rose City and Saint Helen areas.
+          </p> 
+        </div>
+        <!-- END OF Intro Paragraph-->
+
+        <!--In Home Care Card-->
+        <div class="container in-home-care__container">
+          <div class="row">
+            <div class="col-md in-home-care__media">
+              <img src="img/card-cat.jpg" alt="Human touching palms with small kitten">
+            </div>
+            <div class="col-md in-home-care__text">
+              <div class="d-flex justify-content-center in-home-care__text-dog-photo">
+                <img src="img/dog.png" alt="A cartoon image of a blue dog sitting on his hind legs."/>
+              </div>
+              <div class="d-flex justify-content-center in-home-care__text-title">
+                <h3>Experienced in-home care for your pets</h3>
+              </div>
+              <div class="styled-br"></div>
+              <div class="in-home-care__text-text">
+                <p>
+                  We are here to help you out, offering all the benefits of home security, and providing comprehensive care for your pets. 
+                  Rather you are looking for care for your dog that needs mid day walks or you are going on vacation and have to leave your cats at home. 
+                  Keep your pets happy and healthy.
+                </p>
+                <br>
+                <p>
+                  Even if you have a pet that you can't get traditionally boarded, feel comfortable leaving your family at home knowing they are going to be comfortable and well taken care of.
+                </p>
+              </div>
+              <div class="d-flex justify-content-center in-home-care__button">
+                <a href="servicesandrates.html" class="bttn-float bttn-lg bttn-jumbo">Rates</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--END OF In Home Care Card-->
+
+        <!--Services Section-->
+        <div class="services__container">
+          <h3 class="services__title">Services</h3>
+          <div class="container">
+            <div class="row">
+              <div class="col-md">
+                <div class="d-flex justify-content-center">
+                  <img src="img/pets-hotel-house-sign-with-a-paw.png" alt="Pet Hotel icon with a paw"/>
+                </div>
+                <h4 class="services__service-title">Dog Walking</h4> 
+                <p class="services__service-text">
+                  Whether you have a new puppy at home, work long hours or maybe you are unable to get them out. 
+                  One things for sure is that your  dogs could use a walk around your neighborhood.
+                </p>
+                <div class="d-flex justify-content-center in-home-care__button">
+                  <a href="servicesandrates.html" class="bttn-float bttn-lg bttn-jumbo">Learn More</a>
+                </div>
+              </div>
+              <div class="col-md">
+                <div class="d-flex justify-content-center">
+                  <img src="img/walking-the-dog-1.png" alt="Pet Hotel icon with a paw"/>
+                </div>
+                <h4 class="services__service-title">Pet Sitting</h4> 
+                <p class="services__service-text">
+                  We make sure they get the comfort, attention, 
+                  and TLC they need in their own home. We try to keep their daily routine and schedule 
+                  as close to the same as possible.
+                </p>
+                <div class="d-flex justify-content-center in-home-care__button">
+                  <a href="servicesandrates.html" class="bttn-float bttn-lg bttn-jumbo">Learn More</a>
+                </div>
+              </div>
+              <div class="col-md">
+                <div class="d-flex justify-content-center">
+                  <img src="img/bunny-icon.png" alt="Pet Hotel icon with a paw"/>
+                </div>
+                <h4 class="services__service-title">Other Critters</h4> 
+                <p class="services__service-text">
+                  We love our other critters too!
+                  If you have a pet that you aren't sure if we service, feel free to get ahold of us. 
+                  Feel free to give us a call and see if we are able to service your friend.
+                </p>
+                <div class="d-flex justify-content-center in-home-care__button">
+                  <a href="servicesandrates.html" class="bttn-float bttn-lg bttn-jumbo">Learn More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- END OF Services Section-->
+        
+        <!--Parallax-->
+        <div class="parallax__container">
+          <div class="parallax__media">
+            <div class="parallax__text">
+              <h3 class="parallax__text-title">Schedule Your Meet And Greet</h3>
+              <div class="styled-br"></div>
+              <p>
+                We like to Set up your meet and greet with Happy Tales and we will. Schedule a meet and greet with 
+                or sitter and see first hand how dedicated we are to keeping your pets lifestyle the same or possibly 
+                improving it if needed. Pets strive on routine and our goal is to keep their schedule as close to the 
+                same as possible in order to keep them at their happiest. If you aren't sure how your pet will take 
+                to our sitter, don't worry the meet and greet is complementary for all of us to decide if we will be 
+                a good fit for each other.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- END OF Parallax-->
+
+        <!-- Why Choose-->
+        <div class="container why-choose__container">
+          <h3 class="why-choose__title"> Why Choose <span class="accent">Happy Tales</span>?</h3>
+          <div class="row">
+            <div class="col-md">
+              <div class="d-flex justify-content-center why-choose__icon">
+                <i class="fa fa-mobile fa-4x"></i>
+              </div>
+              <h3>Text and Picture Updates</h3>
+              <div class="styled-br"></div>
+              <p>
+                Receive daily text and picture updates of your pets. After your sitter completes each visit, 
+                they will send via text or email a detailed summary of what they did along with a photo. 
+                This way, you can be sure your family is being taken care of.
+              </p>
+            </div>
+            <div class="col-md">
+              <div class="d-flex justify-content-center why-choose__icon">
+                <i class="far fa-handshake fa-4x"></i>
+              </div>
+              <h3>Trusted and Friendly</h3>
+              <div class="styled-br"></div>
+              <p>
+                With being in service for multiple years we have the experience and knowledge to the care for your pets.
+              </p>
+            </div>
+            <div class="col-md">
+              <div class="d-flex justify-content-center why-choose__icon">
+                <i class="fas fa-home fa-4x"></i>
+              </div>
+              <h3>In-Home Care</h3>
+              <div class="styled-br"></div>
+              <p>
+                We go to the pets home and care for them in the comfort of their own home.
+              </p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md">
+              <div class="d-flex justify-content-center why-choose__icon">
+                <i class="far fa-calendar fa-4x"></i>
+              </div>
+              <h3>Available 365 Days</h3>
+              <div class="styled-br"></div>
+              <p>
+                We work year round in order to give your pets the care they need.
+              </p>
+            </div>
+            <div class="col-md">
+              <div class="d-flex justify-content-center why-choose__icon">
+                <i class="fas fa-dog fa-4x"></i>
+              </div>
+              <h3>Happier, Healthier Pets</h3>
+              <div class="styled-br"></div>
+              <p>
+                With the reduced travel trauma and having them away from their homes, helps keep them happy and heathy.
+              </p>
+            </div>
+            <div class="col-md">
+              <div class="d-flex justify-content-center why-choose__icon">
+                <i class="fas fa-car fa-4x"></i>
+              </div>
+              <h3>Reduced Travel Trauma</h3>
+              <div class="styled-br"></div>
+              <p>
+                Lots of pets don't do well, either traveling with you or traveling to the boarders. Help your pets from not having to deal with all of the downfalls traveling with your pets cause.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- END OF WHy Choose-->
+
+        <!-- Gallery -->
+        <h3 class="gallery__title">Our Friends</h3>
+        <div class="flex-container gallery__container">
+          <div class="row">
+            <div class="col-md mt-5 ml-5 d-flex justify-content-center">
+              <img src="img/Gallery/Home_1_Bonnie.jpg" alt="Black and white female cat looking at camera."/>
+            </div>
+            <div class="col-md mt-5 d-flex justify-content-center">
+              <img src="img/Gallery/Home_2_Fritzy.jpg" alt="Gray-Brown, small male dog smiling at the camera."/>
+            </div>
+            <div class="col-md mt-5 d-flex justify-content-center">
+              <img src="img/Gallery/Home_3_Cooper.jpg" alt="Gray-Brown, small male dog smiling at the camera."/>
+            </div>
+            <div class="col-md mt-5 mr-5 d-flex justify-content-center">
+              <img src="img/Gallery/Home_4_Velvet.jpg" alt="Gray-Brown, small male dog smiling at the camera."/>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md mt-5 ml-5 mb-5 d-flex justify-content-center">
+              <img src="img/Gallery/Home_5_Cookie.jpg" alt="Black and white female cat looking at camera."/>
+            </div>
+            <div class="col-md mt-5 mb-5 d-flex justify-content-center">
+              <img src="img/Gallery/Home_6_Samson.jpg" alt="Gray-Brown, small male dog smiling at the camera."/>
+            </div>
+            <div class="col-md mt-5 mb-5 d-flex justify-content-center">
+              <img src="img/Gallery/Home_7_Cody.jpg" alt="Gray-Brown, small male dog smiling at the camera."/>
+            </div>
+            <div class="col-md mt-5 mr-5 mb-5 d-flex justify-content-center">
+              <img src="img/Gallery/Home__8_Cat.jpg" alt="Gray-Brown, small male dog smiling at the camera."/>
+            </div>
+          </div>
+          <div class="d-flex justify-content-center gallery-button">
+            <a href="html/gallery.html" class="bttn-float bttn-lg bttn-jumbo">Go To Gallery</a>
+          </div>
+        </div>
+        <!-- END OF Gallery-->
+
+        <!-- Ready To Join-->
+        <div class="container ready-to-join__container">
+          <h3>Is Your Friend <span class="accent">Ready To Join</span> The Happy Tales Pack?</h3>
+          <p>
+            Our happy clients come in many shapes, sizes and colors. Let Happy Tales Pet Care make you and your fur babies happy; 
+            we're certain you won't regret it. Click here to contact us today!
+          </p>
+          <div class="d-flex justify-content-center ready-to-join__button">
+            <a href="html/contact.html" class="bttn-float bttn-lg bttn-jumbo">Contact Us</a>
+          </div>
+        </div>
+        <!--END OF Ready To Join-->
+
+        <!-- Footer -->
+          <footer class="page-footer font-small blue pt-4" style="margin-top: 0;">
+            <!-- Footer Links -->
+            <div class="container-fluid text-center text-md-left">
+                <div class="row">
+                    <div class="col-md-4 mt-md-0 mt-3">
+                        <h5 class="text-uppercase font-weight-bold">Contact</h5>
+                        <i class="fas fa-phone"></i> <p class="footer-text footer-contact-text">(989)217-6097</p><br/>
+                        <i class="fas fa-envelope"></i> <p class="footer-text footer-contact-text">happytalespetcare@gmail.com</p>
+                        <br/><br/>
+                        <p class="footer-text" style="margin-bottom:1rem;">Servicing West Branch, Saint Helen & Rose City</p>
+                        <p class="footer-text">Out of service area? Contact us today to figure</p>
+                        <p class="footer-text">something out!</p>
+                    </div>
+                    <div class="col-md-4 mt-md-0 mt-3">
+                        <h5 class="text-uppercase font-weight-bold">Office Hours</h5>
+                        <p class="footer-text">Monday:    8:00 AM - 8:00 PM</p>
+                        <p class="footer-text">Tusday:    8:00 AM - 8:00 PM</p>
+                        <p class="footer-text">Wednesday: 8:00 AM - 8:00 PM</p>
+                        <p class="footer-text">Thursday:  8:00 AM - 8:00 PM</p>
+                        <p class="footer-text">Friday:    8:00 AM - 8:00 PM</p>
+                        <p class="footer-text">Saturday:  9:00 AM - 4:00 PM</p>
+                        <p class="footer-text">Sunday:   12:00 PM - 4:00 PM</p>
+                    </div>
+                    <div class="col-md-4 mt-md-0 mt-3">
+                        <h5 class="text-uppercase font-weight-bold">Let's Connect!</h5>
+                        <p class="footer-text"> Follow us on Facebook and Instagram</p>
+                        <p class="footer-text"> for all of the latest Happy Tales news!</p>
+                        <div>
+                            <i class="fab fa-facebook-f fa-2x social-icon-fb"></i>
+                            <i class="fab fa-instagram fa-2x social-icon-insta"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="footer-break"/>
+            <div class="footer-copyright text-center py-3">© 2020 Copyright:
+                <a href="https://deadhead.media" style="color: var(--mainBlue);"> DeadHead.Media</a>
+            </div>
+        </footer>
+        <!--END OF Footer -->
+
+        <script src="js/index.js"></script>
+    </body>
+</html>

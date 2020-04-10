@@ -1,30 +1,248 @@
-#contact {
-	width:100%;
-	align-content: center;
-	position: relative;
-	margin-top: 200px;
-	bottom: 150px;
-
+#heroCarousel {
+    top: -25px;
 }
 
-.contact-title {
-	color:var(--mainBlue2);
-	margin-top:80px;
-	padding-bottom:0;
+.hero-carousel__title {
+    position: relative;
+    top: -100px;
 }
 
-.contact-text {
-	text-align: center;
-	width: 55%;
-	color:var(--mainGray);
-	position: relative;
-	left:50%;
-	transform:translate(-50%, 0%);
-	font-size:22px;
+.hero-carousel__title h1 {
+    font-size: 4rem;
+    font-weight: 200;
 }
 
-.bttn-contact {
-	position:relative;
-	margin-top:2%;
-	font-size:2vw;
+.hero-carousel__paw-divider {
+    position: relative;
+    top: -60px;
+}
+
+.hero-carousel__subtitle {
+    width: 30%;
+    margin-left: 35%;
+}
+
+.hero-carousel__button .bttn-float.bttn-lg {
+    margin-left: 0;
+    margin-top: -50px;
+    font-size: 24px;
+}
+
+.intro-paragraph {
+    width: 30%;
+    margin-left: 35%;
+    margin-top: 60px;
+    text-align: justify;
+    line-height: 1.75rem;
+}
+
+.accent-letter {
+    font-size: 36px;
+}
+
+.in-home-care__container {
+    margin-top: 120px;
+    background-color: white;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+.col-md.in-home-care__media {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.in-home-care__text-dog-photo {
+    margin-top: 30px;
+}
+
+.in-home-care__text-title {
+    text-transform: uppercase;
+    color: var(--mainBlue);
+}
+
+.in-home-care__text-title h3 {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.in-home-care__text-text {
+    text-align: center;
+    margin-top: 60px;
+}
+
+.in-home-care__button .bttn-float.bttn-lg {
+    margin-left: 0;
+    margin-top: 40px;
+    font-size: 24px
+}
+
+.services__container {
+    margin-top: 120px;
+}
+
+.services__title {
+    text-transform: uppercase;
+    color: var(--mainBlue);
+    text-align: center;
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+.services__service-title,
+.services__service-text {
+    text-align: center;
+}
+
+.services__service-title{
+    margin-top: 20px;
+}
+
+.services__service-text {
+    margin-left: 10%;
+    margin-top: 40px;
+    width: 80%;
+}
+
+.services__container .row {
+    margin-top: 60px;
+}
+
+.parallax__container {
+    margin-top: 180px;
+}
+
+.parallax__container .parallax__media {
+    background-image: url('img/parallax-img.jpg');
+    min-height: 500px;
+    width: 100%;
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax__text {
+    height: 500px;
+    background-color: rgba(100, 100, 100, 0.4);
+    border-radius: 10px;
+}
+
+.parallax__text-title {
+    padding-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+    font-size: 40px;
+}
+
+.parallax__text .styled-br {
+    margin-top: 30px;
+    border: 1px solid white;
+}
+
+.parallax__text p {
+    margin-top: 120px;
+    padding-bottom: 10px;
+    color: white;
+    text-align: center;
+    width: 70%;
+    margin-left: 15%;
+}
+
+.why-choose__container {
+    margin-top: 120px;
+}
+
+.why-choose__title {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 40px;
+    color: #808080;
+    margin-bottom: 30px;
+}
+
+.why-choose__container .row .col-md {
+    height: 350px;
+    overflow: hidden;
+}
+
+.why-choose__container .row h3 {
+    width: 80%;
+    height: 57.6px;
+    margin-left: 10%;
+    margin-top: 10px;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+
+.why-choose__container .styled-br {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.why-choose__container .row p {
+    width: 80%;
+    margin-left: 10%;
+    text-align: center;
+    font-size: 16px;
+}
+
+.gallery__container {
+    background-image: linear-gradient(45deg, var(--mainPurple), var(--mainBlue));
+}
+
+.gallery__title {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 40px;
+    color: #808080;
+    margin-top: 120px;
+}
+
+.gallery__container .row {
+    width: 80%;
+    margin-left: 10%;
+}
+
+.gallery__container .gallery-button .bttn-float.bttn-lg {
+    margin-left: 0;
+    margin-bottom: 20px;
+    background-image: none;
+    background-color: white;
+    color: var(--mainPurple);
+    position: relative;
+    font-size: 18px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+.gallery__container .gallery-button .bttn-float.bttn-lg:hover {
+    box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.8);
+}
+
+.ready-to-join__container {
+    margin-bottom: 30px;
+}
+
+.ready-to-join__container h3 {
+    margin-top: 120px;
+    text-align: center;
+    color: var(--mainBlue);
+}
+
+.ready-to-join__container p {
+    margin-top: 60px;
+    margin-left: 30%;
+    margin-bottom: 0;
+    text-align: center;
+    width: 40%;
+}
+
+.ready-to-join__button .bttn-float.bttn-lg {
+    margin-top: 10px;
+    margin-left: 0;
+    position: relative;
+    font-size: 20px;
 }
