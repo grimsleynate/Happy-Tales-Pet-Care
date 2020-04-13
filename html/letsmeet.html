@@ -100,37 +100,38 @@
                         <p class="schedule-form__form-column-subtitle-p">Please fill out this form and we will be in touch.</p>
                     </div>
                     <div class="schedule-form__form">
-                        <form>
+
+                        <form action="https://formspree.io/mvobdgwo" method="POST">
                             <div class="form-group">
                                 <label for="form__name">Full Name</label>
-                                <input type="text" class="form-control" id="form__name" placeholder="Enter Your Full Name" required>
+                                <input name="user_name" type="text" class="form-control" id="form__name" placeholder="Enter Your Full Name" required>
                             </div>
                             <div class="form-group">
                                 <label for="form__phone">Phone Number</label>
-                                <input type="text" class="form-control" id="form__phone" placeholder="555-555-5555" required>
+                                <input name="user_phone" type="text" class="form-control" id="form__phone" placeholder="555-555-5555" required>
                             </div>
                             <div class="form-group">
                                 <label for="form__email">Email</label>
-                                <input type="email" class="form-control" id="form__email" placeholder="example@example.com" required>
+                                <input name ="user_email" type="email" class="form-control" id="form__email" placeholder="example@example.com" required>
                             </div>
                              <div class="form-group">
                                 <label for="form__address">Address</label>
-                                <input type="text" class="form-control" id="form__address" placeholder="1234 Main St." required>
+                                <input name="user_address" type="text" class="form-control" id="form__address" placeholder="1234 Main St." required>
                                 <small>We do not share this information with anyone.</small>
                             </div>
                             <div class="d-flex justify-content-between">
                                 <div class="form-group schedule-form__form-city">
                                     <label for="form__city">City</label>
-                                    <input type="text" class="form-control" id="form__city" placeholder="West Branch" required>
+                                    <input name="user_city" type="text" class="form-control" id="form__city" placeholder="West Branch" required>
                                 </div>
                                 <div class="form-group schedule-form__form-zip">
                                     <label for="form__zip">ZIP Code</label>
-                                    <input type="text" class="form-control" id="form__zip" placeholder="12345" required>
+                                    <input name="user_zip" type="text" class="form-control" id="form__zip" placeholder="12345" required>
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label for="form__service-needed">Service Needed:</label>
-                                <select class="form-control" id="form__service-needed" required>
+                                <select name="user_service_requested" class="form-control" id="form__service-needed" required>
                                   <option>Pet Sitting (drop-by)</option>
                                   <option>Dog Walking</option>
                                   <option>Other</option>
@@ -138,21 +139,21 @@
                             </div> 
                             <div class="form-group">
                                 <label for="form__other">If Other, please specify: </label>
-                                <textarea class="form-control" id="form__other" rows="1"></textarea>
+                                <textarea name="user_other_service" class="form-control" id="form__other" rows="1"></textarea>
                             </div>
                             <div class="form-group">
                                 <label for="form__dates">Dates Needed</label>
-                                <input type="text" class="form-control" id="form__dates" placeholder="March 05, 2020 - March 10, 2020" required>
+                                <input name="user_dates_needed" type="text" class="form-control" id="form__dates" placeholder="March 05, 2020 - March 10, 2020" required>
                             </div>
                             <div class="form-group">
                                 <label for="form__medication">Does your pet require special care or medication? If so, what?</label>
-                                <textarea class="form-control" id="form__medication" rows="2"></textarea>
+                                <textarea name="user_special_care" class="form-control" id="form__medication" rows="2"></textarea>
                             </div>
                             <div class="form-group">
                                 <label for="form__more-info">Please briefly summarize the pets needing service (type, gender, age, temparement).</label>
-                                <textarea class="form-control" id="form__more-info" rows="5" placeholder="One male dog, three years old.  Very friendly with people, cautious around other animals."></textarea>
+                                <textarea name="user_pet_summary" class="form-control" id="form__more-info" rows="5" placeholder="One male dog, three years old.  Very friendly with people, cautious around other animals."></textarea>
                             </div>
-                            <button type="submit" class="btn btn-primary schedule-form__submit-button">Submit</button>
+                            <button name="submit" type="submit" class="btn btn-primary schedule-form__submit-button">Submit</button>
                         </form>
                     </div>
                 </div>
@@ -176,10 +177,10 @@
                     </div>
                     <div class="d-flex justify-content-center schedule-form_download-docs-column__buttons">
                         <div class="schedule-form__download-docs-column__client-info">
-                            <a href="../docs/test.pdf" target="_blank" class="bttn-float bttn-lg bttn-jumbo" download>Client/Pet Information</a>
+                            <a href="../docs/Client Pet Information.html" target="_blank" class="bttn-float bttn-lg bttn-jumbo" download>Client/Pet Information</a>
                         </div>
                         <div class="schedule-form__download-docs-column__contract">
-                            <a href="faq.html" class="bttn-float bttn-lg bttn-jumbo">Contract Agreement</a>
+                            <a href="../docs/Contract and Service Considerations.pdf" target="_blank" class="bttn-float bttn-lg bttn-jumbo">Contract Agreement</a>
                         </div>
                     </div>
                     <div class="d-flex justify-content-center schedule-form__download-docs-column__map-text">
@@ -239,8 +240,8 @@
                         <p class="footer-text"> Follow us on Facebook and Instagram</p>
                         <p class="footer-text"> for all of the latest Happy Tales news!</p>
                         <div>
-                            <i class="fab fa-facebook-f fa-2x social-icon-fb"></i>
-                            <i class="fab fa-instagram fa-2x social-icon-insta"></i>
+                            <a href="https://mobile.facebook.com/happytalespetservice/"><i class="fab fa-facebook-f fa-2x social-icon-fb"></i></a>
+                            <a href="https://www.instagram.com/happytalespetservice/"><i class="fab fa-instagram fa-2x social-icon-insta"></i></a>
                         </div>
                     </div>
                 </div>
