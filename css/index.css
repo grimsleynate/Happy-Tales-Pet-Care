@@ -2,6 +2,10 @@
     top: -25px;
 }
 
+.hero-carousel__wrapper .carousel-inner .carousel-caption {
+    bottom: 0;
+}
+
 .hero-carousel__title {
     position: relative;
     top: -100px;
@@ -12,14 +16,16 @@
     font-weight: 200;
 }
 
-.hero-carousel__paw-divider {
-    position: relative;
-    top: -60px;
-}
-
 .hero-carousel__subtitle {
     width: 30%;
     margin-left: 35%;
+    position: relative;
+    top: -45px;
+}
+
+.hero-carousel__paw-divider {
+    position: relative;
+    top: -80px;
 }
 
 .hero-carousel__button .bttn-float.bttn-lg {
@@ -28,7 +34,7 @@
     font-size: 24px;
 }
 
-.hero-carousel__wrapper .carousel-item img {
+.hero-carousel__wrapper .carousel-item-img {
     filter: opacity(80%) brightness(0.8);
 }
 
@@ -279,4 +285,45 @@
     margin-left: 0;
     position: relative;
     font-size: 20px;
+}
+
+@media only screen and (max-width: 1605px) {
+    .hero-carousel__title h1 {
+        font-size: 3rem;
+    }
+
+    .hero-carousel__subtitle h3 {
+        font-size: 1.25rem;
+    }
+}
+
+@media only screen and (max-width: 1400px) {
+    .hero-carousel__title h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-carousel__subtitle h3 {
+        font-size: 1rem;
+    }
+
+    .hero-carousel__wrapper .carousel-inner .carousel-caption {
+        bottom: -20px;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .hero-carousel__title h1 {
+        position: relative;
+        top: 20px;
+        font-size: 2rem;
+    }
+
+    .hero-carousel__subtitle h3 {
+        position: relative;
+        bottom: 20px;
+    }
+
+    .hero-carousel__wrapper .carousel-inner .carousel-caption {
+        bottom: -40px;
+    }
 }

@@ -551,13 +551,14 @@
 
 #gallery__img-overlay-25 {
     top: 387px;
+    z-index: 30;
 }
 
 #gallery__img-overlay-25:hover,
 #gallery__img-overlay-25:focus {
-    height: 387px;
-    -webkit-transform: translateY(-437px);
-	transform: translateY(-437px);
+    height: 437px;
+    -webkit-transform: translateY(-387px);
+	transform: translateY(-387px);
 }
 
 #gallery__img-overlay-25 small {
@@ -590,6 +591,7 @@
 }
 
 #gallery__img-overlay-27 {
+    z-index: 30;
     top: 499px;
 }
 
