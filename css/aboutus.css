@@ -164,3 +164,7 @@ color: #808080;
 .carousel-control-next {
 	right: -13%;
 }
+
+.card-text a{
+    font-weight: bolder;
+}

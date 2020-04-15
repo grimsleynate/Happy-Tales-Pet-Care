@@ -11,6 +11,10 @@
     border-left: 2px solid var(--mainBlue);
 }
 
+.schedule-form__container .contact-title {
+    margin-top: 100px;
+}
+
 .schedule-form__subtitle {
     margin-top: 30px;
 }

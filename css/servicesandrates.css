@@ -48,6 +48,10 @@
     margin-top: 30px;
 }
 
+services-card__text-lead-p a {
+    font-weight: bolder;
+}
+
 .services-card__text p {
     text-align: center;
 }
