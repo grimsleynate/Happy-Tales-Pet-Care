@@ -387,24 +387,21 @@
 }
 
 @media only screen and (max-width: 500px) {
+    .hero-carousel__wrapper .carousel-inner .carousel-caption {
+        bottom: 0;
+    }
+
     .hero-carousel__title h1 {
         font-size: 1.5rem;
     }
-    
+
     .hero-carousel__subtitle {
-        position: absolute;
-        left: -9999px;
-        top: -9999px;
-     }
+        width: 70%;
+        margin-left: 15%;
+    }
 
-     .hero-carousel__paw-divider {
-         display: none;
-     }
-}
-
-@media only screen and (max-width: 400px) {
-    .hero-carousel__title h1 {
-        top: -50px;
+    .hero-carousel__subtitle h3 {
+        font-size: .75rem;
     }
 
     .carousel-img {
