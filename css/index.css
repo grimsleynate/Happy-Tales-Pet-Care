@@ -38,6 +38,26 @@
     filter: opacity(80%) brightness(0.8);
 }
 
+.carousel-img {
+    filter: opacity(80%) brightness(0.8);
+    width: 100%;
+    height: 26vw;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.carousel-img-1 {
+    background-image: url("img/IndexHero/hero-carousel-1.jpg");
+}
+
+.carousel-img-2 {
+    background-image: url("img/IndexHero/hero-carousel-2.jpg");
+}
+
+.carousel-img-3 {
+    background-image: url("img/IndexHero/hero-carousel-3.jpg");
+}
+
 .intro-paragraph {
     width: 30%;
     margin-left: 35%;
@@ -325,5 +345,78 @@
 
     .hero-carousel__wrapper .carousel-inner .carousel-caption {
         bottom: -40px;
+    }
+
+    .hero-carousel__button .bttn-float.bttn-lg {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .carousel-img {
+        height: 56vw;
+    }
+
+    .carousel-img-1 {
+        background-image: url("img/IndexHero/hero-carousel-1-900px.jpg");
+    }
+
+    .carousel-img-2 {
+        background-image: url("img/IndexHero/hero-carousel-2-900px.jpg");
+    }
+
+    .carousel-img-3 {
+        background-image: url("img/IndexHero/hero-carousel-3-900px.jpg");
+    }
+
+    .hero-carousel__wrapper .carousel-inner .carousel-caption {
+        bottom: 30px;
+    }
+
+    .hero-carousel__subtitle {
+        width: 50%;
+        margin-left: 25%;
+     }
+}
+
+@media only screen and (max-width: 700px) {
+    .hero-carousel__wrapper .carousel-inner .carousel-caption {
+        bottom: -40px;
+    }
+
+}
+
+@media only screen and (max-width: 500px) {
+    .hero-carousel__subtitle {
+        position: absolute;
+        left: -9999px;
+        top: -9999px;
+     }
+
+     .hero-carousel__paw-divider {
+         display: none;
+     }
+}
+
+@media only screen and (max-width: 400px) {
+    .hero-carousel__title h1 {
+        font-size: 1.5rem;
+        top: -50px;
+    }
+
+    .carousel-img {
+        height: 87vw;
+    }
+
+    .carousel-img-1 {
+        background-image: url("img/IndexHero/hero-carousel-1-400px.jpg");
+    }
+
+    .carousel-img-2 {
+        background-image: url("img/IndexHero/hero-carousel-2-400px.jpg");
+    }
+
+    .carousel-img-3 {
+        background-image: url("img/IndexHero/hero-carousel-3-400px.jpg");
     }
 }
