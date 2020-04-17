@@ -387,6 +387,7 @@
 
     .services__service-text {
         font-size: 1rem;
+        min-height: 144px;
     }
 
     .in-home-care__text img {
@@ -442,6 +443,16 @@
     }
     .parallax__text p {
         font-size: 1rem;
+    }
+
+    .services__button .bttn-float.bttn-lg {
+        margin-top: 0;
+        top: 240px;   
+    }
+
+    .services__container .service-2, 
+    .services__container .service-3 {
+        margin-top: 30px;
     }
 
     .gallery__container {

@@ -29,6 +29,7 @@ p {
 }
 /*This selects the navigation links for styling.
   We have to be ultra specific to override Bootstrap. */
+  
 .navbar-light .nav-item.active .nav-link,
 .navbar-light .nav-item:focus .nav-link,
 .navbar-light .nav-item:hover .nav-link,
@@ -81,6 +82,13 @@ and has hovered over the text */
 	color: white;
 	font-size: 16px;
 	transition: color 600ms linear, font-size 600ms linear;
+}
+
+.navbar-light .navbar-brand:focus, 
+.navbar-light .navbar-brand:hover,
+.navbar-light .navbar-brand.scrolled:focus,
+.navbar-light .navbar-brand.scrolled:hover {
+	color: var(--mainBlue);
 }
 
 a {
