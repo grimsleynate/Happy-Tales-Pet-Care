@@ -88,6 +88,7 @@
 .in-home-care__text-title {
     text-transform: uppercase;
     color: var(--mainBlue);
+    text-align: center;
 }
 
 .in-home-care__text-title h3 {
@@ -229,7 +230,7 @@
     text-transform: uppercase;
     text-align: center;
     font-size: 1.5rem;
-    font-weight: bolder;
+    font-weight: 500;
 }
 
 .why-choose__container .styled-br {
@@ -279,6 +280,10 @@
 .gallery__container img {
     border-radius: 10px;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.8);
+}
+
+.gallery__container-mobile {
+    display:none;
 }
 
 .ready-to-join__container {
@@ -350,6 +355,43 @@
     .hero-carousel__button .bttn-float.bttn-lg {
         font-size: 1rem;
     }
+
+    .in-home-care__media img {
+        height: 100%;
+        width: 100%;
+    }
+
+    .parallax__text p{
+        margin-top: 40px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    body {
+        font-size: 1rem;
+    }
+
+    .intro-paragraph {
+    width: 60%;
+    margin-left: 20%;
+    text-align: center;
+    }
+
+    .intro-paragraph p {
+        font-size: 1rem;
+    }
+
+    .in-home-care__text-text p{
+        font-size: 1rem;
+    }
+
+    .services__service-text {
+        font-size: 1rem;
+    }
+
+    .in-home-care__text img {
+        display: none;
+    }
 }
 
 @media only screen and (max-width: 900px) {
@@ -377,6 +419,81 @@
         width: 50%;
         margin-left: 25%;
      }
+
+     .in-home-care__text-text {
+         margin-top: 20px;
+     }
+}
+
+@media only screen and (max-width: 767px) {
+    .in-home-care__media img {
+        max-width: 100%;
+        max-height: 400px;
+        display: block;
+    }
+
+    .services__container .service-2,
+    .services__container .service-3 {
+        margin-top: 150px;
+    }
+
+    .parallax__text-title {
+        font-size: 1.75rem;
+    }
+    .parallax__text p {
+        font-size: 1rem;
+    }
+
+    .gallery__container {
+        display: none;
+    }
+
+    .gallery__container-mobile {
+        display:block;
+        background-image: linear-gradient(45deg, var(--mainBlue), var(--mainPurple));
+    }
+
+    .gallery__container-mobile .carousel{
+        max-width: 60vw;
+        padding: 20px 0;
+        margin-left: 20%;
+    }
+
+    .gallery__container-mobile .carousel-inner {
+        border-radius: 10px;
+        box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+    }
+
+    .gallery__container-mobile .carousel-control-prev {
+        left: -25%;
+    }
+
+    .gallery__container-mobile .carousel-control-next {
+        right: -25%;
+    }
+
+    .gallery__container-mobile .gallery-button a{
+        font-size: 1.25rem;
+        position: relative;
+        margin: 20px 0;
+        background-image: none;
+        background-color: rgba(0, 0, 0, 0);
+        border: 2px solid white;
+    }
+
+    .gallery__container-mobile .gallery-button a:hover {
+        background-color: white;
+        color: var(--mainPurple);
+    }
+
+    .ready-to-join__container h3 {
+        font-size: 2rem;
+    }
+
+    .ready-to-join__container p {
+        font-size: 1rem;
+        margin-top: 20px;
+    }
 }
 
 @media only screen and (max-width: 700px) {
@@ -392,7 +509,7 @@
     }
 
     .hero-carousel__title h1 {
-        font-size: 1.5rem;
+        font-size: 1.75rem;
     }
 
     .hero-carousel__subtitle {
@@ -419,4 +536,42 @@
     .carousel-img-3 {
         background-image: url("img/IndexHero/hero-carousel-3-400px.jpg");
     }
+
+    .intro-paragraph {
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    .in-home-care__text-text p{
+        font-size: 1rem;
+    }
+
+    .parallax__text p{
+        margin-top: 10px;
+        margin-left: 5%;
+        margin-right: 0;
+        width: 90%;
+    }
+
+    .parallax__text .parallax__button .bttn-float.bttn-lg{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
 }
+
+@media only screen and (max-width: 350px) {
+    .hero-carousel__subtitle {
+        position: absolute;
+        left: -999px;
+        top: -999px;
+    }
+
+    .hero-carousel__paw-divider {
+        display: none;
+    }
+
+    .parallax__text .parallax__button .bttn-float.bttn-lg{
+        display: none;
+    }
+}
+
