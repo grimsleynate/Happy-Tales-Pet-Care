@@ -67,17 +67,17 @@
 
 .schedule-form_download-docs-column__buttons .schedule-form__download-docs-column__client-info a,
 .schedule-form_download-docs-column__buttons .schedule-form__download-docs-column__contract a{
-    margin-left: 0;
+    margin-left: -35px;
     margin-top: 20px;
     font-size: 16px;
 }
 
 .schedule-form_download-docs-column__buttons .schedule-form__download-docs-column__client-info {
-    margin-left: -150px;
+    margin-left: -10px;
 }
 
 .schedule-form_download-docs-column__buttons .schedule-form__download-docs-column__contract {
-    margin-left: 250px;
+    margin-left: 130px;
 }
 
 .schedule-form__download-docs-column__map-text {
@@ -89,3 +89,41 @@
     text-align: center;
     color: var(--mainPurple);
 }
+
+@media only screen and (max-width: 1024px) {
+    .intro-text__quote-p {
+        font-size: 1.5rem;
+    }
+
+    .schedule-form__form-column-title-h3 {
+        text-align: center;
+        font-size: 1.75rem;
+    }
+
+    .schedule-form__form-column-title-h3 {
+        text-align: center;
+        font-size: 1.75rem;
+    }
+
+    .schedule-form__container p {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .schedule-form__form {
+        width: 80%;
+        margin-left: 10%;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .intro-text__quote-p {
+        font-size: 1rem;
+    }
+
+    .schedule-form__download-docs-column {
+        margin-top: 60px;
+    }
+}
+

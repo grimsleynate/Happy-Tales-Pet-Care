@@ -360,36 +360,6 @@ footer i {
 				  transition: all 0.2s cubic-bezier(0.02, 0.01, 0.47, 1);
 				  transition: all 0.2s cubic-bezier(0.02, 0.01, 0.47, 1), -webkit-transform 0.2s cubic-bezier(0.02, 0.01, 0.47, 1);
 }
-.bttn-float.bttn-default {
-  border-color: #fff;
-  background: rgba(255,255,255,0.4);
-  color: #fff;
-}
-.bttn-float.bttn-primary {
-  border-color: #1d89ff;
-  background: rgba(29,137,255,0.4);
-  color: #1d89ff;
-}
-.bttn-float.bttn-warning {
-  border-color: #feab3a;
-  background: rgba(254,171,58,0.4);
-  color: #feab3a;
-}
-.bttn-float.bttn-danger {
-  border-color: #ff5964;
-  background: rgba(255,89,100,0.4);
-  color: #ff5964;
-}
-.bttn-float.bttn-success {
-  border-color: #28b78d;
-  background: rgba(40,183,141,0.4);
-  color: #28b78d;
-}
-.bttn-float.bttn-royal {
-  border-color: #bd2df5;
-  background: rgba(189,45,245,0.4);
-  color: #bd2df5;
-}
 
 .call-to-action__container {
     height: 550px;
