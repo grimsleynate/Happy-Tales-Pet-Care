@@ -465,19 +465,24 @@ footer i {
 	padding: 20px 20px;
 }
 
-@media only screen and (max-width: 414px) {
-	#testimonials {
-		display: none;
+@media only screen and (max-width: 1024px) {
+	.card-title {
+		font-size: 2rem;
 	}
+}
 
-	#testimonials-mobile {
-		display: block;
-		margin-top: 5%;
+@media only screen and (max-width: 768px) {
+	.titleCardTitleBackground {
+		width: 155px;
 	}
 }
 
 @media only screen and (max-width: 400px) {
 	.navbar .navbar-brand {
 		font-size: 1rem;
+	}
+
+	.card-title {
+		font-size: 1.5rem;
 	}
 }

@@ -91,7 +91,7 @@
         <!-- END OF Mission Statement-->
 
         <!-- Our Story-->
-        <div class="card">
+        <div class="card our-story__card">
             <img class="card-img-top" src="../img/our-story-card.jpg" alt="Card image cap of a dog running down a trail.">
             <div class="card-body">
               <h5 class="card-title">Our Story</h5>
@@ -111,17 +111,19 @@
         <div class="flex-container aboutUs-social__container">
             <div class="row">
                 <div class="col-md aboutUs-social__map-section">
-                    <h3 class="aboutUs-social__map-title">Service Area</h3>
-                    <p class="aboutUs-social__description">
-                        Service Areas are West Branch, Rose City and Saint Helen as long as it is 20 miles from our location. Any services that are out of range will be an additional .50 cents per 
-                        mile added on to the service. If you aren't sure if you are in our service range feel free to fill out the form and we will let you know! 
-                    </p>
-                    <div class="d-flex justify-content-center">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d729511.5797693656!2d-84.80110645733522!3d44.419732795145535!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8820f753dd309057%3A0xcab1dd7828e7fc6f!2sHappy+Tales+Pet+Care!5e0!3m2!1sen!2sus!4v1556474954205!5m2!1sen!2sus" 
-                                width="550" height="550" frameborder="0" style="border:0" allowfullscreen>
-                        </iframe>
+                    <div class="map">
+                      <h3 class="aboutUs-social__map-title">Service Area</h3>
+                      <p class="aboutUs-social__description">
+                          Service Areas are West Branch, Rose City and Saint Helen as long as it is 20 miles from our location. Any services that are out of range will be an additional .50 cents per 
+                          mile added on to the service. If you aren't sure if you are in our service range feel free to fill out the form and we will let you know! 
+                      </p>
+                      <div class="d-flex justify-content-center">
+                          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d729511.5797693656!2d-84.80110645733522!3d44.419732795145535!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8820f753dd309057%3A0xcab1dd7828e7fc6f!2sHappy+Tales+Pet+Care!5e0!3m2!1sen!2sus!4v1556474954205!5m2!1sen!2sus" 
+                                  width="550" height="550" frameborder="0" style="border:0" allowfullscreen>
+                          </iframe>
+                      </div>
                     </div>
-                    <div class="intro-text__quote d-flex justify-content-center">
+                    <div class="intro-text__quote d-flex justify-content-center quote-1">
                         <p class="aboutUs-social__quote-p">"If you do what you love, you love what you do."</p>
                     </div>
                 </div>
@@ -142,13 +144,13 @@
 
         <!-- Testimonials-->
         <!-- Testimonials DESKTOP-->
-        <section class="text-center testimonial__container" id="testimonials">
+        <section class="text-center" id="testimonials">
         <!-- Section heading -->
             <h2 id="carousel-title" class="h2-responsive font-weight-bold mt-5 pb-0 card-title">
                 What Our <span style="font-family:'Dancing Script', cursive; color: var(--mainBlue);">Friends</span> Have To Say
             </h2>
             <!-- Section description -->
-            <div id="testimonial-carousel" class="carousel slide carousel-multi-item carousel-fade" data-ride="carousel" data-interval="12000">
+            <div id="testimonial-carousel" class="carousel slide carousel-multi-item carousel-fade  testimonial__container" data-ride="carousel" data-interval="12000">
             <ol class="carousel-indicators" style="z-index:10; margin-bottom: 100px;">
                 <li data-target="#testimonial-carousel" data-slide-to="0" class="active"></li>
                 <li data-target="#testimonial-carousel" data-slide-to="1"></li>
@@ -312,7 +314,7 @@
         <span class="sr-only">Next</span>
       </a>
      </div>
-     </section>
+        </section>
         <!-- END OF Testimonials DESKTOP-->
         <!-- Testimonials MOBILE-->
         <div class=" flex-container testimonial__container-mobile">
@@ -434,20 +436,17 @@
               </div>
             </div>
             <a class="carousel-control-prev" href="#galleryControls" role="button" data-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="containerarousel-control-prev-icon"><i class="fas fa-angle-left fa-2x"></i> </span>
               <span class="sr-only">Previous</span>
             </a>
             <a class="carousel-control-next" href="#galleryControls" role="button" data-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="carousel-control-next-icon" aria-hidden="true"><i class="fas fa-angle-right fa-2x"></i></span>
               <span class="sr-only">Next</span>
             </a>
           </div>
-          <div class="d-flex justify-content-center gallery-button">
-            <a href="html/gallery.html" class="bttn-float bttn-lg bttn-jumbo">Gallery</a>
-          </div>
         </div>
         <!-- END OF Testimonials MOBILE-->
-      <!-- END OF Testimonials-->
+        <!-- END OF Testimonials-->
 
         <!-- Call To Action Div-->
         <div class="container-fluid call-to-action__container" style="margin-top: 0;">
