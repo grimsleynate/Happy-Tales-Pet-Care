@@ -398,7 +398,8 @@ footer i {
 }
 
 .call-to-action__container .call-to-action__h3 {
-    padding-top: 250px;
+	padding-top: 250px;
+	text-align: center;
 }
 
 .call-to-action__container .call-to-action__h3 h3{
