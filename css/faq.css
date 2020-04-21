@@ -63,3 +63,57 @@
 #howToJoinCollapse a{
     font-weight: bolder;
 }
+
+@media only screen and (max-width: 1620px) {
+    .titleCardTitleBackground { 
+        width: 325px;
+    }
+}
+
+@media only screen and (max-width: 1027px) {
+    .card-title.intro-title {
+        font-size: 1.75rem;
+    }
+
+    .intro-text__quote-p {
+        font-size: 1.5rem;
+    }
+
+    .intro-text__subtitle-p {
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #faqImg {
+        background-image:url('img/hero-rabbit-768px.jpg');
+    }
+
+    .intro-text__quote-p {
+        font-size: 1.25rem;
+        width: 80%;
+    }
+
+    .intro-text__subtitle-p {
+        font-size: 1.5rem;
+    }
+
+    .faq__card .card-body {
+        font-size: 1rem;
+    }
+
+    .faq__card button {
+        font-weight: 400;
+        font-size: 1.25rem;
+    }
+
+    .card {
+        width: 85%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .card {
+        width: 95%;
+    }
+}
