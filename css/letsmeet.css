@@ -120,6 +120,8 @@
 @media only screen and (max-width: 767px) {
     .intro-text__quote-p {
         font-size: 1rem;
+        padding-left: 10px;
+        width: 90%;
     }
 
     .schedule-form__download-docs-column {
@@ -127,3 +129,8 @@
     }
 }
 
+@media only screen and (max-width: 600px) {
+    #letsMeetImg {
+        background-image:url('img/hero-dog-ball-600px.jpg');
+    }
+}

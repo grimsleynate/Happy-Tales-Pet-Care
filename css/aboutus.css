@@ -63,6 +63,11 @@
     font-weight: 300;
 }
 
+.aboutUs-social__container .row{
+    margin-right: 0px;
+}
+
+
 .card-main-text {
 	padding-top: 4%;
 	padding-left:10%;
