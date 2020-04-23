@@ -357,8 +357,8 @@
     }
 
     .in-home-care__media img {
-        height: 100%;
         width: 100%;
+        min-height: 100%;
     }
 
     .parallax__text p{
