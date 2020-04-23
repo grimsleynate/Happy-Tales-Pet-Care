@@ -29,26 +29,23 @@ p {
 }
 /*This selects the navigation links for styling.
   We have to be ultra specific to override Bootstrap. */
-  
-.navbar-light .nav-item.active .nav-link,
-.navbar-light .nav-item:focus .nav-link,
-.navbar-light .nav-item:hover .nav-link,
 .navbar .navbar-brand {
-	color:var(--mainPurple);
+	color:white;
 	transition: color 200ms linear;
-	font-size: 24px;
+	font-size: 1.75rem;
 }
 
 /*This targets the non-active nav-links */
 .navbar-light .nav-item .nav-link {
 	font-family: "Signika", sans-serif;
-	color:white;
+	color: white;
 	transition: color 200ms linear;
-	font-size: 22px;
+	font-size: 1.25rem;
 }
 
-.navbar .navbar-brand.scrolled {
-	font-size: 22px;
+.navbar-light .nav-item .nav-link:focus,
+.navbar-light .nav-item .nav-link:hover {
+	color: var(--mainBlue);
 }
 
 .bg-transparent {
@@ -58,36 +55,12 @@ p {
 /*This is applied to the navbar background once
 javascript recognizes the user has scrolled further
 than the navbar's height */
-.bg-transparent.scrolled {
+.bg-transparent {
 	background-color: var(--mainPurple) !important;
-	transition: background-color 200ms linear;
-}
-
-/*This is applied to the nav-link and navbar-brand
-once the user has scrolled down further than the navbar's height
-and has hovered over the text */
-.navbar-light .nav-item.active .nav-link.scrolled,
-.navbar-light .nav-item:focus .nav-link.scrolled,
-.navbar-light .nav-item:hover .nav-link.scrolled,
-.navbar .navbar-brand.scrolled .navbar .navbar-brand.scrolled:hover {
-	transition: color 200ms linear;
-	/* This increases the font size when you scroll
-	   over a link */
-	font-size: 18px;
-}
-
-/*this is also applied to the nav-link when the user scrolls down */
-.navbar-light .nav-item .nav-link.scrolled, .navbar-brand.scrolled,
-.navbar.scrolled .navbar-toggler i {
-	color: white;
-	font-size: 16px;
-	transition: color 600ms linear, font-size 600ms linear;
 }
 
 .navbar-light .navbar-brand:focus, 
-.navbar-light .navbar-brand:hover,
-.navbar-light .navbar-brand.scrolled:focus,
-.navbar-light .navbar-brand.scrolled:hover {
+.navbar-light .navbar-brand:hover {
 	color: var(--mainBlue);
 }
 
@@ -445,6 +418,14 @@ footer i {
 @media only screen and (max-width: 768px) {
 	.titleCardTitleBackground {
 		width: 155px;
+	}
+
+	.navbar .navbar-brand {
+		font-size: 1.5rem;
+	}
+
+	.navbar-light .nav-item .nav-link {
+		font-size: 1rem;
 	}
 }
 
