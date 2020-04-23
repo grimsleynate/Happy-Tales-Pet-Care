@@ -395,6 +395,13 @@
     }
 }
 
+@media only screen and (max-width: 991px) {
+    .why-choose__container .styled-br {
+        margin-top: 35px;
+        margin-bottom: 15px;
+    }
+}
+
 @media only screen and (max-width: 900px) {
     .carousel-img {
         height: 56vw;
